@@ -20,6 +20,13 @@ metalsmith(__dirname)
 			metadata: {
 				name: 'Articles'
 			}
+		},
+		posts: {
+			sortBy: 'date',
+			reverse: 'true',
+			metadata: {
+				name: 'Blog posts'
+			}
 		}
 	}))
 	.use(markdown())
