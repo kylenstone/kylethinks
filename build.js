@@ -13,7 +13,7 @@ metalsmith(__dirname)
 	.source('./src')
 	.destination('./public')
 	.use(markdown())
-	.use(layouts{
+	.use(layouts({
 		engine: 'handlebars',
 		directory: './layouts',
 		default: 'article.html',
