@@ -1,0 +1,16 @@
+{
+  "name": "kylethinks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project leadership, strategic thinking",
+  "author": "Kyle Stone",
+  "dependencies": {
+    "metalsmith": "file:metalsmith",
+    "metalsmith-markdown": "^0.2.1"
+  },
+  "main": "build.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node ."
+  }
+}
