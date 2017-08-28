@@ -1,6 +1,6 @@
 var metalsmith = require('metalsmith'),
-	collections = require('metalsmith-collections'),
 	markdown = require('metalsmith-markdown'),
+	collections = require('metalsmith-collections'),	
 	layouts = require('metalsmith-layouts'),
 	handlebars = require('handlebars'),
 	serve = require('metalsmith-serve');
@@ -14,16 +14,8 @@ metalsmith(__dirname)
 	})
 	.destination('./public')
 	.use(markdown())
-    .use(layouts({
-            engine: 'handlebars',
-            directory: './layouts',
-            default: 'article.html',
-            pattern: ["*/*/*html","*/*html","*html"],
-            partials: 'layouts/partials'
-        }))	
 	.use(collections({
 		articles: {
-			pattern: '*.md',
 			sortBy: 'date',
 			reverse: 'true',
 			metadata: {
@@ -37,7 +29,14 @@ metalsmith(__dirname)
 				name: 'posts'
 				}
 			}
-		}))
+		}))	
+    .use(layouts({
+            engine: 'handlebars',
+            directory: './layouts',
+            default: 'article.html',
+            pattern: ["*/*/*html","*/*html","*html"],
+            partials: 'layouts/partials'
+        }))	
 	.use(serve({
 		verbose: true
 	}))

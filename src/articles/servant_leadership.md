@@ -1,6 +1,7 @@
 ---
 date: "2017-08-25"
 title: "Servant Leadership: 'It's Not About You'"
+collection: "articles"
 description: "Why some of the most impactful leaders fight for seats in the back of the room."
 ---
 
