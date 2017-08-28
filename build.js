@@ -18,7 +18,11 @@ metalsmith(__dirname)
             engine: 'handlebars',
             directory: './layouts',
             default: 'article.html',
-            pattern: ["*/*/*html","*/*html","*html"]
+            pattern: ["*/*/*html","*/*html","*html"],
+            partials: {
+            	header: 'partials/header',
+            	footer: 'partials/footer'
+            }
         }))	
 	.use(collections({
 		articles: {

@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ site.name }}</title>
-    <meta name="description" content="{{ site.description }}" />
-  </head>
+{{> header}}
   <body>
     <h1>{{ site.name }}</h1>
     <p class="about">
@@ -19,5 +13,4 @@
       </li>
     {{/each}}
     </ul>
-  </body>
-</html>
+{{> footer}}
