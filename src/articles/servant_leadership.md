@@ -4,16 +4,8 @@ title: "Servant Leadership: 'It's Not About You'"
 description: "Why some of the most impactful leaders fight for seats in the back of the room."
 ---
 
-<!-- Result?  Better decisions, more influence
-Inspire Trust
-Motivate Employees
-Build Community
-Grow other servant leaders
-(?) Conventional Management -->
-
-
 # What is servant leadership?  
-Servant leadership is a mindset that combines [qualities of selflessness, patience and empathy](servant_leader_qualities/) with a management strategy that motivates employees and fosters growth.  Managers who embrace the creative potentials of the servant leader mentality drive cohesion and positive thinking through their teams and increase resilience in their organizations.
+Servant leadership is a mindset that combines [qualities of selflessness, patience and empathy](#servant_leader_qualities/) with a management strategy that motivates employees and fosters growth.  Managers who embrace the creative potentials of the servant leader mentality drive cohesion and positive thinking through their teams and increase resilience in their organizations.
 
 Drucker: "In a knowledge-based organization, however, it is the individual worker’s productivity that makes the entire system successful.  In a traditional workforce, the worker serves the system; in a knowledge workforce, the system must serve the worker."
 

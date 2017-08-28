@@ -1,5 +1,4 @@
 ---
-title: Kyle Thinks
 layout: index.html
 ---
 # What I do
