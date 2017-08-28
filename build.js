@@ -2,7 +2,8 @@ var metalsmith = require('metalsmith'),
 	markdown = require('metalsmith-markdown'),
 	layouts = require('metalsmith-layouts'),
 	handlebars = require('handlebars'),
-	collections = require('metalsmith-collections');
+	collections = require('metalsmith-collections'),
+	serve = require('metalsmith-serve');
 
 metalsmith(__dirname)
 	.metadata({
@@ -40,12 +41,14 @@ metalsmith(__dirname)
 				}
 			}
 		}))
+	.use(serve({
+		verbose: true
+	}))
 	.build(function (err)  {
 		if (err) {
 			console.log(err);
 		}
 		else {
-			
 			console.log('kylethinks built!');
 		}
 	});
