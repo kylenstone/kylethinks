@@ -1,18 +1,17 @@
 var metalsmith = require('metalsmith'),
+	collections = require('metalsmith-collections'),
 	markdown = require('metalsmith-markdown'),
 	layouts = require('metalsmith-layouts'),
 	handlebars = require('handlebars'),
-	collections = require('metalsmith-collections'),
 	serve = require('metalsmith-serve');
 
 metalsmith(__dirname)
 	.metadata({
 		site: {
-			name: 'Kylethinks',
-			description: "Kyle thinks"
+			name: 'Kyle thinks',
+			description: "Kyle Stone: Agile leadership, technical project management, digital production"
 		}
 	})
-	.source('./src')
 	.destination('./public')
 	.use(markdown())
     .use(layouts({
@@ -20,24 +19,22 @@ metalsmith(__dirname)
             directory: './layouts',
             default: 'article.html',
             pattern: ["*/*/*html","*/*html","*html"],
-            partials: {
-            	header: 'partials/header',
-            	footer: 'partials/footer'
-            }
+            partials: 'layouts/partials'
         }))	
 	.use(collections({
 		articles: {
+			pattern: '*.md',
 			sortBy: 'date',
 			reverse: 'true',
 			metadata: {
-				name: 'Articles'
+				name: 'articles'
 			}
 		},
 		posts: {
 			sortBy: 'date',
 			reverse: 'true',
 			metadata: {
-				name: 'Blog posts'
+				name: 'posts'
 				}
 			}
 		}))

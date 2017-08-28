@@ -7,9 +7,10 @@
     <ul class="recent">
     {{#each articles }}
       <li>
-        <div class="title"><a href="#">{{ title }}</a></div>
+        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
         <div class="date">{{ date }}</div>
       </li>
     {{/each}}
+    <div class="articles">{{articles}}</div>
     </ul>
 {{> footer}}
