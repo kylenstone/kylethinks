@@ -5,6 +5,14 @@
       {{{ contents }}}
     </p>
     <ul class="recent">
+    <h2> Latest posts </h2>
+    {{#each posts}}
+      <li>
+        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
+        <div class="date">{{ date }}</div>
+      </li>
+    {{/each}}
+    <h2> Latest articles </h2>
     {{#each articles}}
       <li>
         <div class="title"><a href="{{ path }}">{{ title }}</a></div>
