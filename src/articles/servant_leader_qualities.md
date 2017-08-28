@@ -1,11 +1,7 @@
 ---
 date: 2017-08-25
 title: 'Qualities of the Servant Leader'
-tags: ["articles", "project management", "leadership"]
-type: post
-topics: ["article"]
 description = "Why some of the most impactful leaders fight for seats in the back of the room."
-author: "Kyle"
 ---
 
 # Qualities of the Servant Leader

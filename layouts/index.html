@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+    <meta name="description" content="{{ site.description }}" />
+  </head>
+  <body>
+    <h1>{{ site.name }}</h1>
+    <p class="about">
+      <!-- TODO style contents -->
+      {{{ contents }}}
+    </p>
+    <ul class="recent">
+    {{#each articles }}
+      <li>
+        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
+        <div class="date">{{ date }}</div>
+      </li>
+    {{/each}}
+    </ul>
+  </body>
+</html>

@@ -1,11 +1,7 @@
 ---
 date: "2017-08-25"
 title: "Servant Leadership: 'It's Not About You'"
-tags: ["articles", "project management", "leadership"]
-type: "post"
-topics: ["article"]
 description: "Why some of the most impactful leaders fight for seats in the back of the room."
-author: "Kyle"
 ---
 
 <!-- Result?  Better decisions, more influence
