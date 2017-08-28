@@ -9,7 +9,7 @@ metalsmith(__dirname)
 	.metadata({
 		site: {
 			name: 'Kyle thinks',
-			description: "Kyle Stone: Agile leadership, technical project management, digital production"
+			description: "Kyle Stone: Agile leader, digital project manager, strategic thinker"
 		}
 	})
 	.destination('./public')
