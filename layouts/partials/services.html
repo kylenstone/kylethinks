@@ -1,0 +1,11 @@
+<p class="services-intro">
+  <h2> Services </h2>
+</p>
+<ul class="services">
+{{#each services}}
+  <li>
+    <div class="title"><a href="{{ path }}">{{ services.title }}</a></div>
+    <div class="description">{{ services.description }}</div>
+  </li>
+{{/each}}
+</ul>

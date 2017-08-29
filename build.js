@@ -48,3 +48,10 @@ metalsmith(__dirname)
 			console.log('kylethinks built!');
 		}
 	});
+
+
+var data = { services: [
+    {name: "One"},
+    {name: "Two"},
+    {name: "Three"}
+  ], group: "Bloggers" };
