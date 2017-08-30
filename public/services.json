@@ -1,0 +1,29 @@
+{
+  "Services": [
+    {
+      "title": "Agile goal-setting",
+      "icon": "x",
+      "description": "Work with your teams implement a lean, flexible framework that defines and prioritizes the goals deemed essential for the org to flourish.  Assign a confidence level to each agile goal and demonstrate verifiable (i.e. Data-driven) improvements based on the completion of sub-objectives at e.g. two or four week intervals."
+    },
+    {
+      "title": "Coaching",
+      "icon": "",
+      "description":""
+    },
+    {
+      "title": "Project management",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "title": "Four",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "title": "Five",
+      "icon": "",
+      "description": ""
+    }        
+  ]
+}

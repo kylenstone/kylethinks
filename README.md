@@ -28,3 +28,6 @@ The best description I've found comes from Mark "Keeto" Obcena at [Keetology](ht
 ### partials ###
 
 ```build.js``` looks for partials at ```layouts/partials```.  A partial at ```partials/nav.html``` can be used as ```{{> nav }}```, however a partial nested in a subdirectory would be invoked as ```{{> header/main_nav}}```.  See [consolidate.js](https://github.com/tj/consolidate.js/)
+
+### assets ###
+assets from the `src` folder are included in this repo but their duplicates in `public/assets` are ignored via a rule in the `.gitignore` file.  This may require `build`ing the site for everything to load correctly.

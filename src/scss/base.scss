@@ -1,0 +1,90 @@
+/*base styles:
+html
+body
+form
+input
+a
+a:hover
+*/
+
+/*layout styles:
+header
+article
+post
+footer
+blog
+*/
+
+/*module styles:
+(belong insude layouts > )
+nav (and nav > h2 etc)
+quote
+video
+carousel
+*/
+
+@import 'reset';
+@import url(https://fonts.googleapis.com/css?family=Rokkitt);
+
+/*variables*/
+/*//colors*/
+$black: #121921;
+$half-black: rgba($black, 0.5);
+$white: #ffffff;
+$half-white: rgba($white, 0.5);
+$green: #61c192;
+$light-yellow: #fffedb;
+$blue: #2D3589;
+$lightest-grey: #f5f5f5;
+$light-grey: #e6e5e6;
+$medium-grey: #878b8f;
+$dark-grey: #474b4f;
+$red: #ef5125;
+
+/*Typography*/
+$body-copy-color: $black;
+$root-font-size: 14px;
+/*  ^ equals 1 rem  */
+/*declare Rokkitt*/
+/*declare some fallback fonts*/
+
+/*layout*/
+$smartphone: 452px;
+$tablet: 768px;
+$desktop: 1080px;
+
+/*padding*/
+$padding-extra-small: 12px / $root-font-size * 1rem;
+$padding-small: 16px / $root-font-size * 1rem;
+$padding-medium: 20px / $root-font-size * 1rem;
+$padding-large: 26px / $root-font-size * 1rem;
+$padding-extra-large: 54px / $root-font-size * 1rem;
+
+h1 {
+	font-family: 'Rokkitt', serif;
+	text-align: center;
+}
+
+title {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-family: 'Rokkitt', serif;
+}
+
+.navigation-bar{
+	display: flex;
+	position: relative;
+	justify-content: flex-start;
+	align-content: center;
+	max-height: 6.42;
+	background-color: $black; // define
+	padding: $padding-extra-small; //define	
+}
+
+

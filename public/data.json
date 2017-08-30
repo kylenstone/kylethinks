@@ -1,0 +1,49 @@
+{
+    "url": "http://kylethinks.com",
+    "title": "Kyle Stone",
+    "description": "Kyle Stone's Professional Blog",
+    "rss": {
+        "title": "Kyle Stone's blog"
+    },
+    "cssFile": "css/kylethinks.css",
+    "owner": "Kyle Stone",
+    "headerLinks": [{
+        "url": "/",
+        "title": "Home",
+        "class": "home"
+    }, {
+        "url": "/work/",
+        "title": "My work",
+        "class": "work"
+    }, {
+        "url": "/services/",
+        "title": "Services",
+        "class": "services"
+    }, {
+        "url": "/resume/",
+        "title": "CV",
+        "class": "resume"  
+    }
+    ],
+    "footerLinks": [{
+        "url": "http://www.github.com/kylenstone",
+        "title": "GitHub",
+        "class": "github",
+        "icon": "github"
+    }, {
+        "url": "http://www.instagram.com/brophdawg11",
+        "title": "Instagram",
+        "class": "instagram",
+        "icon": "instagram"
+    }, {
+        "url": "http://www.twitter.com/kylenstone",
+        "title": "Twitter",
+        "class": "twitter",
+        "icon": "twitter"
+    }, {
+        "url": "/rss.xml",
+        "title": "RSS",
+        "class": "rss",
+        "icon": "rss"
+    }]
+}

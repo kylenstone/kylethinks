@@ -29,6 +29,7 @@ var
 	handlebars = require('handlebars'),
 	sass = require('metalsmith-sass'),
 	coffee = require('metalsmith-coffee'),
+	assets = require('metalsmith-assets'),
 	devBuild = ((process.env.NODE_ENV || '').trim().toLowerCase() !== 'production'),
 	browsersync = devBuild ? require('metalsmith-browser-sync') : null;
 
@@ -82,6 +83,10 @@ if (browsersync) ms.use(browsersync({ // start test server
 }));
 
 ms
+	.use(assets({ // copy assets (images, etc.)
+	    source: dir.source + 'assets/',
+	    destination: './'
+	}))
 	.build(function (err)  {
 		if (err) {
 			console.log(err);

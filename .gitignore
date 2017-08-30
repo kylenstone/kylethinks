@@ -36,7 +36,7 @@
 ehthumbs.db
 Thumbs.db
 
-# Node stuff #
+# Node specific #
 node_modules/*
 node_modules
 npm-debug.log
@@ -45,3 +45,6 @@ sources/assets/*.js
 sources/assets/*.css
 sources/vendor
 .tmp
+
+# metalsmith specific #
+public/assets/
