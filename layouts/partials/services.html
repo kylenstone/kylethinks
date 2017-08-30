@@ -1,11 +1,11 @@
-<p class="services-intro">
+<p class="services">
   <h2> Services </h2>
 </p>
-<ul class="services">
+<ul class="service-list">
 {{#each services}}
   <li>
-    <div class="title"><a href="{{ path }}">{{ services.title }}</a></div>
-    <div class="description">{{ services.description }}</div>
+    <div class="service-item-title"><a href="{{ path }}">{{ services.title }}</a></div>
+    <div class="service-item-description">{{ services.description }}</div>
   </li>
 {{/each}}
 </ul>

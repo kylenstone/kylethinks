@@ -17,5 +17,10 @@
   "scripts": {
     "prestart": "npm install",
     "start": "node ."
+  },
+  "devDependencies": {
+    "metalsmith-browser-sync": "^1.1.1",
+    "metalsmith-coffee": "0.0.2",
+    "metalsmith-sass": "^1.4.0"
   }
 }
