@@ -40,13 +40,6 @@ $smartphone: 452px;
 $tablet: 768px;
 $desktop: 1080px;
 
-/*padding*/
-$padding-extra-small: 12px / $root-font-size * 1rem;
-$padding-small: 16px / $root-font-size * 1rem;
-$padding-medium: 20px / $root-font-size * 1rem;
-$padding-large: 26px / $root-font-size * 1rem;
-$padding-extra-large: 54px / $root-font-size * 1rem;
-
 /*base styles:
 html
 body
@@ -66,7 +59,7 @@ h1, h2, h3, h4, h5, h6, .logo {
 
 h1 {
 	color: $half-black;
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 h2 {
