@@ -20,7 +20,8 @@ The best description I've found comes from Mark "Keeto" Obcena at [Keetology](ht
 # Running the blog
 
 - ```npm install metalsmith```
-- ```npm start```
+- ```npm start``` => builds in development mode
+- ```npm run production``` => build in production
 
 # Inspiration
 [metalsmith-base](https://github.com/evocode/metalsmith-base)

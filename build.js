@@ -39,7 +39,7 @@ var ms = metalsmith(dir.base)
 	// .clean(!devBuild)
 	.metadata({
 		site: {
-			name: 'Kyle thinks',
+			name: 'Kyle Thinks',
 			description: "Kyle Stone: Agile leader, digital project manager, strategic thinker"
 		}
 	})

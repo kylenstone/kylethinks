@@ -1,0 +1,82 @@
+
+/*layout styles:
+header
+article
+post
+footer
+blog
+*/
+
+header {
+  background-color: $black;
+  }
+
+.logo {
+	padding: 1em;
+	font-color: $black;
+	font-size:1.5em;
+	background-color: $black;
+	color: $white;
+}
+
+.content {
+	width: 100%;
+	padding: 0.5em 0.2em;
+	margin: 0.5em;
+}
+
+.about {
+
+	.p {
+
+	}
+
+	.title {
+		padding: 1em 0 0 0.5em;
+		margin: 0 0 0 0 ;
+		font-size: 4em;
+		font-weight: bold;
+		color: $black;
+	}
+
+	.subtitle {
+		padding: 0 0 0 1em;
+		font-size: 2em;
+		color: $half-black;
+	}
+
+	.portfolio-pic {
+		float:right;
+		padding: 0 1.5em 0.2em 0 ;
+	}
+}
+
+.services {
+	margin: 6em 0 0 -1em;
+	padding: 2em 1.2em 0 0;
+	width: 100%;
+	background-color: $black;
+
+	.title {
+		text-align: center;
+		font-size: 2em;
+		color: $half-white;
+	}
+}
+
+.navigation-bar{
+	margin: 0 0 0 -1em;
+	display: flex;
+	position: relative;
+	justify-content: flex-start;
+	align-content: center;
+	max-height: 6.42;
+	background-color: $black; // define
+	padding: $padding-extra-small; //define	
+}
+
+
+
+footer {
+	background-color: half-black;
+}

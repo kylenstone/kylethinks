@@ -1,9 +1,21 @@
 {{> header}}
-    <h1 style="font-family: 'Rokkitt',serif">{{ site.name }}</h1>
-    <p class="about">
-      <!-- TODO style contents -->
-      {{{ contents }}}
-    </p>
+    <main>
+    <div class="content">
+      <div class="about">
+        <img class="portfolio-pic" src="/assets/img/portfolio-pic.png"></img>
+        <p class="title">KYLE STONE</p>
+        <p class="subtitle">Agile Leader&nbsp;|&nbsp;Tech PM&nbsp;|&nbsp;Strategic Thinker</p>
+        <h2>What I do</h2>
+        <p>Performance-driven agile project management professional with 10+ years experience leading and mentoring technology teams to set and meet vital business objectives.  Adept at leading high profile initiatives with condensed timelines and complex requirements by utilizing project and operations management best practices.  Background includes introducing and integrating methodology across technology and business operations divisions to boost productivity and attain valued business outcomes.  Expertise in agile transformation and team charter exercises, change management, risk reduction, and service delivery in start-up and matrix organizations</p>
+      </div>
+      <div class="services">
+        <p class="title">&#9660;&nbsp;&nbsp; SERVICES &nbsp;&nbsp;&#9660;</p>
+        <!-- list of services -->
+      </div>
+    </div>
+
+    <h2>Get in touch</h1>
+<p><a href="http://mailto:kylenstone@gmail.com">Email</a> | <a href="http://www.linkedin.com/in/kylenstone">LinkedIn</a> | <a href="#">Resume</a></p>
     <ul class="recent">
     <h2> Latest posts </h2>
     {{#each posts}}
@@ -20,4 +32,6 @@
       </li>
     {{/each}}
     </ul>
+  </div>
+  </main>
 {{> footer}}
