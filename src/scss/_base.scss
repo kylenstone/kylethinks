@@ -1,13 +1,3 @@
-/*module styles:
-(belong insude layouts > )
-nav (and nav > h2 etc)
-quote
-video
-carousel
-*/
-
-//reset
-
 // Google fonts
 @import url(https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans);
 
@@ -15,8 +5,8 @@ carousel
 $rokkitt: 'Rokkitt', serif;
 $open-sans: 'Open Sans', sans-serif;
 
-/*variables*/
-/*//colors*/
+// Color variables
+
 $black: #121921;
 $half-black: rgba($black, 0.5);
 $white: #ffffff;
@@ -30,10 +20,9 @@ $medium-grey: #878b8f;
 $dark-grey: #474b4f;
 $red: #ef5125;
 
-/*Typography*/
+/*Typography variables*/
 $body-copy-color: $black;
-$root-font-size: 14px;
-/*  ^ equals 1 rem  */
+$root-font-size: 16px; // equals 1 rem
 
 /*layout*/
 $smartphone: 452px;
@@ -49,8 +38,13 @@ a
 a:hover
 */
 
-body {
+html, body {
   font-family: 'open-sans', sans-serif;
+  font-size: $root-font-size;
+}
+
+.clearfix {
+	overflow: auto;
 }
 
 h1, h2, h3, h4, h5, h6, .logo {
