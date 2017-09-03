@@ -1,10 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans);
-html,
-body,
-ul,
-ol {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*Typography variables*/
@@ -31,12 +29,11 @@ h1, h2, h3, h4, h5, h6, .logo {
 }
 
 h1 {
-  color: rgba(18, 25, 33, 0.5);
+  color: #121921;
   font-size: 2rem;
 }
 
 h2 {
-  margin: 1em 0 0 0.5em;
   font-color: rgba(18, 25, 33, 0.5);
 }
 
@@ -45,8 +42,6 @@ title {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #ffffff;
 }
 
@@ -60,11 +55,6 @@ a:hover {
 
 a:visited {
   color: #121921;
-}
-
-p {
-  font-family: 'Rokkitt', serif;
-  margin: 0.2em 1em;
 }
 
 /*layout styles:
@@ -82,6 +72,7 @@ header {
   dislay: flex;
   flex-direction: column;
   text-align: center;
+  font-family: "Rokkitt", serif;
 }
 
 nav {
@@ -133,51 +124,57 @@ header > div#logo > div#navToggle > a {
   font-size: 2rem;
 }
 
-.content {
-  padding: 0.5em 0.2em;
-  margin: 0.2em;
+.about {
+  margin: 0.75em;
+  padding: 0 0 0 3em;
+  font-family: "Open Sans", sans-serif;
 }
 
-.about .title {
-  padding: 1em 0 0 0.5em;
-  margin: 0 0 0 0;
-  font-size: 4rem;
+.about h1 {
+  padding-top: 0.6em;
   font-weight: bold;
+  font-size: 4em;
   color: #121921;
 }
 
+.about h2 {
+  padding: 1em 1em 0 0;
+}
+
 .about .subtitle {
-  padding: 0 0 0 1em;
   font-size: 2rem;
   color: rgba(18, 25, 33, 0.5);
 }
 
+.about p {
+  padding: 0 0 1em 0;
+}
+
 .about .portfolio-pic {
-  float: right;
-  padding: 0 1.5em 0.2em 0;
+  width: 300px;
+  margin-left: 1em;
 }
 
 .services {
-  margin: 6em 0 0 -1em;
-  padding: 2em 1.2em 0 0;
-  background-color: #121921;
+  border: 1px solid red;
 }
 
-.services .title {
+.services h2 {
+  padding: 1rem 1rem;
   text-align: center;
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.5);
+  background-color: #121921;
 }
 
 .nav {
-  margin: 0 0 0 -1em;
   display: flex;
   position: relative;
   justify-content: flex-start;
   align-content: center;
   max-height: 6.42;
   background-color: #121921;
-  padding: 0.2em;
+  padding: 0.5em;
 }
 
 footer {
@@ -186,16 +183,16 @@ footer {
 }
 
 /* Medium screens and larger */
-@media all and (min-width: 600px) {
-  header > div#logo > div#navToggle {
-    display: none;
-  }
+@media all and (min-width: 680px) {
   header {
     flex-direction: row;
     text-align: left;
     vertical-align: center;
     width: 100%;
     display: inline-block;
+  }
+  header > div#logo > div#navToggle {
+    display: none;
   }
   header > nav > ul {
     display: flex;
@@ -207,16 +204,16 @@ footer {
   header nav > ul > li > a span.toggle {
     display: none;
   }
+  .about .portfolio-pic {
+    float: right;
+  }
 }
 
-@media only screen and (max-width: 600px) {
-  .about .title, .about .subtitle {
-    display: inline-block;
-    font-size: 1rem;
+@media only screen and (max-width: 680px) {
+  .about {
+    text-align: center;
   }
-  .about .portfolio-pic {
-    overflow: hidden;
-    align-content: center;
-    width: 75%;
+  .about .subtitle {
+    font-size: 1rem;
   }
 }

@@ -15,6 +15,7 @@ header {
 	dislay: flex;
 	flex-direction: column;
 	text-align: center;
+	font-family: $rokkitt;
 }
 
 nav {
@@ -68,57 +69,62 @@ nav {
 }
 
 .content {
-	padding: 0.5em 0.2em;
-	margin: 0.2em;
+	//no margin or padding settings here, we want background-color to span full width of browser when container width is at 100%.
 }
 
 .about {
+	// border: 1px solid red; // DEBUG
+	margin: 0.75em;
+	padding: 0 0 0 3em;
+	font-family:$open-sans;
 
-	.p {
-
-	}
-
-	.title {
-		padding: 1em 0 0 0.5em;
-		margin: 0 0 0 0 ;
-		font-size: 4rem;
+	h1 {
+		padding-top: 0.6em;
 		font-weight: bold;
+		font-size: 4em;
 		color: $black;
 	}
 
+	h2 {
+		padding: 1em 1em 0 0;
+	}
+
 	.subtitle {
-		padding: 0 0 0 1em;
 		font-size: 2rem;
 		color: $half-black;
 	}
 
+	p {
+		padding: 0 0 1em 0;
+	}
+
 	.portfolio-pic {
-		float:right;
-		padding: 0 1.5em 0.2em 0 ;
+		width: 300px;
+		margin-left: 1em;
 	}
 }
 
 .services {
-	margin: 6em 0 0 -1em;
-	padding: 2em 1.2em 0 0;
-	background-color: $black;
+	border: 1px solid red; // DEBUG
 
-	.title {
+	h2 {
+		padding: 1rem 1rem;
 		text-align: center;
 		font-size: 2rem;
 		color: $half-white;
+		background-color: $black;
 	}
 }
 
 .nav{
-	margin: 0 0 0 -1em;
+	// margin: 0 0 0 -1em;
 	display: flex;
 	position: relative;
 	justify-content: flex-start;
 	align-content: center;
 	max-height: 6.42;
-	background-color: $black; // define
-	padding: 0.2em; // adjust	
+	background-color: $black;
+	padding: 0.5em; // adjust	
 }
 
 footer {
@@ -129,11 +135,9 @@ footer {
 // Responsive layout
 
 /* Medium screens and larger */
-@media all and (min-width: 600px) {
-    header > div#logo > div#navToggle {
-        display: none;    
-    }
-    
+
+@media all and (min-width: 680px) {
+
     header {
         flex-direction: row;
         text-align: left;
@@ -141,34 +145,41 @@ footer {
         width: 100%;
         display: inline-block;
     }
-                
 
-    header > nav > ul {
+        header > div#logo > div#navToggle {
+        display: none;    
+    }
+
+        header > nav > ul {
         display: flex;    
     }
-        
-    header nav > ul > li > a {
+
+        header nav > ul > li > a {
     	vertical-align: center;
         padding: 0 1.25rem;
     }
-                    
-    header nav > ul > li > a span.toggle {
+
+        header nav > ul > li > a span.toggle {
         display: none;  
     }
+
+    .about .portfolio-pic {
+    	float:right;
+    }
+    
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
+        
+    .about {
+    	text-align: center;
 
-	.about .title, .about .subtitle { 
-	// reduce title size, fold below image, align spacing.
-		display: inline-block;
+		.subtitle { 
+		// reduce title size, fold below image, align spacing.
 		font-size: 1rem;
-	}
+		}
 
-	.about .portfolio-pic {
-		//move title and subtitle below, align spacing.
-		overflow: hidden;
-		align-content: center;
-		width: 75%;
+		.portfolio-pic {
+		//todo: move title and subtitle below, align spacing.
+		}
 	}
-
 }
