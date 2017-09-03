@@ -10,15 +10,61 @@ quote
 */
 
 header {
-  background-color: $black;
-  }
-
-.logo {
-	padding: 1em;
-	font-color: $black;
-	font-size: 1.875rem;
 	background-color: $black;
+	border-bottom: 1px solid $half-black;
+	dislay: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+nav {
+	font-color: $half-black;
+	display: block;
+	flex: 1;
+	transform: 300ms all ease;
+	float:right;
+}
+
+.nav-list {
+	list-style-type: none;
+
+	a {
+		color: $half-white;
+	}
+
+	a:hover {
+	color: $green;
+	}
+}
+
+	header > nav > ul > li {
+		height: 20px;
+		position: relative;
+	}
+
+	header > nav > ul > li > a {
+		// display: block;
+		color: $half-black;
+		font-weight: 700;
+		text-decoration: none;
+	}
+ 
+	header > div#logo > div#navToggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+          
+    header > div#logo > div#navToggle > a {
+        color: $white;
+        padding: 0 2.5rem;
+        text-decoration: none;
+    }
+
+#logo {
+	padding: 1em;
 	color: $white;
+	font-size: 2rem;
 }
 
 .content {
@@ -64,7 +110,7 @@ header {
 	}
 }
 
-.navigation-bar{
+.nav{
 	margin: 0 0 0 -1em;
 	display: flex;
 	position: relative;
@@ -75,9 +121,54 @@ header {
 	padding: 0.2em; // adjust	
 }
 
-
-
 footer {
 	background-color: half-black;
 	font-size: 1.125rem;
+}
+
+// Responsive layout
+
+/* Medium screens and larger */
+@media all and (min-width: 600px) {
+    header > div#logo > div#navToggle {
+        display: none;    
+    }
+    
+    header {
+        flex-direction: row;
+        text-align: left;
+        vertical-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+                
+
+    header > nav > ul {
+        display: flex;    
+    }
+        
+    header nav > ul > li > a {
+    	vertical-align: center;
+        padding: 0 1.25rem;
+    }
+                    
+    header nav > ul > li > a span.toggle {
+        display: none;  
+    }
+}
+@media only screen and (max-width: 600px) {
+
+	.about .title, .about .subtitle { 
+	// reduce title size, fold below image, align spacing.
+		display: inline-block;
+		font-size: 1rem;
+	}
+
+	.about .portfolio-pic {
+		//move title and subtitle below, align spacing.
+		overflow: hidden;
+		align-content: center;
+		width: 75%;
+	}
+
 }

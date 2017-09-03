@@ -7,8 +7,14 @@
     <meta charset="utf-8">
     <title>{{#if title }}{{ title }} - {{/if}}{{ site.name }}</title>
     <meta name="description" content="{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}" />
-	<link rel="stylesheet" type="text/css" href="css/main.css">      
-  </head> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/responsive.js"></script>    
+  </head>
   <body>
-   <div class="logo">{{ site.name }}</div>  	
-</ul>
+<header>
+      <div id="logo" class="menuUp">{{ site.name }}
+        <div id="navToggle"><a href="#">&#9776;</a></div>
+      </div>
+      {{> nav}}
+    </header>

@@ -78,14 +78,59 @@ quote
 */
 header {
   background-color: #121921;
+  border-bottom: 1px solid rgba(18, 25, 33, 0.5);
+  dislay: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.logo {
-  padding: 1em;
-  font-color: #121921;
-  font-size: 1.875rem;
-  background-color: #121921;
+nav {
+  font-color: rgba(18, 25, 33, 0.5);
+  display: block;
+  flex: 1;
+  transform: 300ms all ease;
+  float: right;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-list a:hover {
+  color: #61c192;
+}
+
+header > nav > ul > li {
+  height: 20px;
+  position: relative;
+}
+
+header > nav > ul > li > a {
+  color: rgba(18, 25, 33, 0.5);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header > div#logo > div#navToggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header > div#logo > div#navToggle > a {
   color: #ffffff;
+  padding: 0 2.5rem;
+  text-decoration: none;
+}
+
+#logo {
+  padding: 1em;
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 .content {
@@ -124,7 +169,7 @@ header {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.navigation-bar {
+.nav {
   margin: 0 0 0 -1em;
   display: flex;
   position: relative;
@@ -140,20 +185,38 @@ footer {
   font-size: 1.125rem;
 }
 
-@media only screen and (max-width: 660px) {
-  .logo {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    padding-top: 2em;
+/* Medium screens and larger */
+@media all and (min-width: 600px) {
+  header > div#logo > div#navToggle {
+    display: none;
   }
+  header {
+    flex-direction: row;
+    text-align: left;
+    vertical-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  header > nav > ul {
+    display: flex;
+  }
+  header nav > ul > li > a {
+    vertical-align: center;
+    padding: 0 1.25rem;
+  }
+  header nav > ul > li > a span.toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .about .title, .about .subtitle {
     display: inline-block;
     font-size: 1rem;
   }
   .about .portfolio-pic {
-    justify-content: center;
-    display: block;
     overflow: hidden;
+    align-content: center;
+    width: 75%;
   }
 }
