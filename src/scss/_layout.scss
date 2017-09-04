@@ -87,10 +87,10 @@ header {
 .section {
 	// border: 5px solid red; // DEBUG
 	clear:both;
-	display:block;
 
 	p {
-		padding: 3em;
+		padding: 3em; // fairly inflexible rule.  TODO refactor
+		text-align: justify;
 	}
 
 	h2 {
@@ -101,10 +101,10 @@ header {
 		background-color: $black;
 	}
 
-	a {
+	h2 a, h2 a:hover {
 		color: inherit; // note this also impacts inline and footer links.
 	}
-
+	
 	.grid-services {
 		max-width: 72rem;
 		margin: 1em auto;
@@ -248,7 +248,12 @@ footer {
 	}
 
 	.section .service-item {
-		width: 50%;
+		width: 100%;
+
+		p {
+			padding: 3em 6em;
+			text-align: justify;
+		}
 	}
 
 	.articles, .posts {

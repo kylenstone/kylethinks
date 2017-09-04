@@ -50,16 +50,16 @@ body {
   background-color: #ffffff;
 }
 
-a {
-  color: #ef5125;
+a, a:visited {
+  color: #666;
 }
 
 a:hover {
-  color: #2D3589;
+  color: #ef5125;
 }
 
-a:visited {
-  color: #121921;
+p {
+  color: #666;
 }
 
 footer {
@@ -139,11 +139,11 @@ header .nav-list a:hover {
 
 .section {
   clear: both;
-  display: block;
 }
 
 .section p {
   padding: 3em;
+  text-align: justify;
 }
 
 .section h2 {
@@ -154,7 +154,7 @@ header .nav-list a:hover {
   background-color: #121921;
 }
 
-.section a {
+.section h2 a, .section h2 a:hover {
   color: inherit;
 }
 
@@ -275,7 +275,11 @@ footer .credits {
     width: 90%;
   }
   .section .service-item {
-    width: 50%;
+    width: 100%;
+  }
+  .section .service-item p {
+    padding: 3em 6em;
+    text-align: justify;
   }
   .articles, .posts {
     width: 100%;

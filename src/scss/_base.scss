@@ -17,7 +17,7 @@ $blue: #2D3589;
 $lightest-grey: #f5f5f5;
 $light-grey: #e6e5e6;
 $medium-grey: #878b8f;
-$dark-grey: #474b4f;
+$dark-grey: #666;
 $red: #ef5125;
 $pale-red: #ef4953;
 
@@ -74,20 +74,16 @@ body {
 	background-color: $white;
 }
 
-a {
-	color: $red;
+a, a:visited {
+	color: $dark-grey;
 }
 
 a:hover {
-	color: $blue;
-}
-
-a:visited {
-	color: $black;
+	color: $red;
 }
 
 p {
-
+	color: $dark-grey;
 }
 
 footer {
