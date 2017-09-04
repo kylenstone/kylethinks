@@ -31,12 +31,13 @@ var
 	coffee = require('metalsmith-coffee'),
 	assets = require('metalsmith-assets'),
 	devBuild = ((process.env.NODE_ENV || '').trim().toLowerCase() !== 'production'),
+    htmlmin = devBuild ? null : require('metalsmith-html-minifier'),
 	browsersync = devBuild ? require('metalsmith-browser-sync') : null;
 
 console.log((devBuild ? 'Development' : 'Production'), 'build, version', pkg.version);
 
 var ms = metalsmith(dir.base)
-	// .clean(!devBuild)
+	// .clean(!devBuild) // clean folder before a production build
 	.metadata({
 		site: {
 			name: 'Kyle Thinks',
@@ -46,27 +47,24 @@ var ms = metalsmith(dir.base)
 	.destination(dir.dest)
 	.use(markdown())
 	.use(collections({
-		articles: {
+		article: {
 			sortBy: 'date',
 			reverse: 'true',
 			metadata: {
-				name: 'articles'
+				name: 'article'
 			}
 		},
-		posts: {
+		post: {
 			sortBy: 'date',
 			reverse: 'true',
 			metadata: {
-				name: 'posts'
+				name: 'post'
 				}
 			}
 		}))	
     .use(sass({
     	outputStyle: 'expanded',
-    	outputDir: function(originalPath) { 
-        // this will change scss/some/path to css/some/path
-        	return originalPath.replace("scss", "css");
-      }
+    	outputDir: './css'
     }))
 	.use(coffee())
     .use(layouts({
@@ -85,7 +83,7 @@ if (browsersync) ms.use(browsersync({ // start test server
 ms
 	.use(assets({ // copy assets (images, etc.)
 	    source: dir.source + 'assets/',
-	    destination: './'
+	    destination: 'assets/'
 	}))
 	.build(function (err)  {
 		if (err) {

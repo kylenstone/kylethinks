@@ -1,7 +1,7 @@
 ---
 title: "New blog, new perspective"
 date: "2017-08-15"
-collection: posts
+collection: post
 description: "This summer I spent a late night taking stock of my journey from a first-time project manager to a project management professional and technology team leader.  That's how this blog was born."
 ---
 

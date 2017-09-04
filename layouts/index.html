@@ -1,5 +1,4 @@
 {{> header}}
-  <main>
   <div class="content">
     <div class="about">
       <img class="portfolio-pic" src="/assets/img/portfolio-pic.png"></img>
@@ -14,7 +13,7 @@
       <div class="posts">
       <h3> Latest posts </h3>
       <ul>
-      {{#each posts}}
+      {{#each post}}
         <li>
           <div class="title"><a href="{{ path }}">{{ title }}</a></div>
           <div class="date">{{ date }}</div>
@@ -25,7 +24,7 @@
       <div class="articles">
       <h3> Latest articles </h3>
       <ul>
-      {{#each articles}}
+      {{#each article}}
         <li>
           <div class="title"><a href="{{ path }}">{{ title }}</a></div>
           <div class="date">{{ date }}</div>
