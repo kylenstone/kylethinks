@@ -67,78 +67,55 @@ nav
 quote
 */
 header {
+  padding: 2.5rem;
   background-color: #121921;
-  border-bottom: 1px solid rgba(18, 25, 33, 0.5);
-  dislay: flex;
-  flex-direction: column;
-  text-align: center;
   font-family: "Rokkitt", serif;
 }
 
-nav {
-  font-color: rgba(18, 25, 33, 0.5);
-  display: block;
-  flex: 1;
-  transform: 300ms all ease;
+header #logo {
+  float: left;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+header nav {
   float: right;
 }
 
-.nav-list {
-  list-style-type: none;
-}
-
-.nav-list a {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.nav-list a:hover {
-  color: #61c192;
-}
-
-header > nav > ul > li {
-  height: 20px;
-  position: relative;
-}
-
-header > nav > ul > li > a {
+header nav ul > li > a {
   color: rgba(18, 25, 33, 0.5);
-  font-weight: 700;
+  font-size: 1.25rem;
   text-decoration: none;
 }
 
-header > div#logo > div#navToggle {
+header div#logo > div#navToggle {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-header > div#logo > div#navToggle > a {
+header div#logo > div#navToggle > a {
   color: #ffffff;
   padding: 0 2.5rem;
   text-decoration: none;
 }
 
-#logo {
-  padding: 1em;
-  color: #ffffff;
-  font-size: 2rem;
+header .nav-list {
+  list-style-type: none;
 }
 
-.about {
-  margin: 0.75em;
-  padding: 0 0 0 3em;
-  font-family: "Open Sans", sans-serif;
+header .nav-list a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+header .nav-list a:hover {
+  color: #61c192;
 }
 
 .about h1 {
-  padding-top: 0.6em;
   font-weight: bold;
   font-size: 4em;
   color: #121921;
-}
-
-.about h2 {
-  padding: 1em 1em 0 0;
 }
 
 .about .subtitle {
@@ -152,14 +129,15 @@ header > div#logo > div#navToggle > a {
 
 .about .portfolio-pic {
   width: 300px;
+  display: block;
   margin-left: 1em;
 }
 
-.services {
-  border: 1px solid red;
+.section p {
+  padding: 2em;
 }
 
-.services h2 {
+.section h2 {
   padding: 1rem 1rem;
   text-align: center;
   font-size: 2rem;
@@ -185,16 +163,13 @@ footer {
 /* Medium screens and larger */
 @media all and (min-width: 680px) {
   header {
-    flex-direction: row;
     text-align: left;
-    vertical-align: center;
     width: 100%;
-    display: inline-block;
   }
-  header > div#logo > div#navToggle {
+  header div#logo > div#navToggle {
     display: none;
   }
-  header > nav > ul {
+  header nav > ul {
     display: flex;
   }
   header nav > ul > li > a {
@@ -203,6 +178,14 @@ footer {
   }
   header nav > ul > li > a span.toggle {
     display: none;
+  }
+  .about {
+    margin: 0.75em;
+    padding: 0 0 6em 3em;
+    font-family: "Open Sans", sans-serif;
+  }
+  .about h1 {
+    padding-top: 1.5em;
   }
   .about .portfolio-pic {
     float: right;
@@ -215,5 +198,9 @@ footer {
   }
   .about .subtitle {
     font-size: 1rem;
+    padding-bottom: 2em;
+  }
+  .about .portfolio-pic {
+    text-align: center;
   }
 }

@@ -10,63 +10,56 @@ quote
 */
 
 header {
+	padding: 2.5rem;
 	background-color: $black;
-	border-bottom: 1px solid $half-black;
-	dislay: flex;
-	flex-direction: column;
-	text-align: center;
 	font-family: $rokkitt;
-}
 
-nav {
-	font-color: $half-black;
-	display: block;
-	flex: 1;
-	transform: 300ms all ease;
-	float:right;
-}
-
-.nav-list {
-	list-style-type: none;
-
-	a {
-		color: $half-white;
+	#logo {
+		float:left;
+		color: $white;
+		font-size: 2rem;
 	}
 
-	a:hover {
-	color: $green;
-	}
-}
+	nav {
+		float:right;
 
-	header > nav > ul > li {
-		height: 20px;
-		position: relative;
+		ul > li {
+			// responsive only
+		}
+
+		ul > li > a {
+			// responsive only
+			color: $half-black;
+			font-size: 1.25rem;
+			text-decoration: none;
+		}
 	}
 
-	header > nav > ul > li > a {
-		// display: block;
-		color: $half-black;
-		font-weight: 700;
-		text-decoration: none;
+	div#logo > div#navToggle {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
 	}
- 
-	header > div#logo > div#navToggle {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-          
-    header > div#logo > div#navToggle > a {
+
+    div#logo > div#navToggle > a {
         color: $white;
         padding: 0 2.5rem;
         text-decoration: none;
     }
 
-#logo {
-	padding: 1em;
-	color: $white;
-	font-size: 2rem;
+	.nav-list {
+	list-style-type: none;
+
+		a {
+			color: $half-white;
+		}
+
+		a:hover {
+		color: $green;
+		}
+	}
 }
+
 
 .content {
 	//no margin or padding settings here, we want background-color to span full width of browser when container width is at 100%.
@@ -74,19 +67,11 @@ nav {
 
 .about {
 	// border: 1px solid red; // DEBUG
-	margin: 0.75em;
-	padding: 0 0 0 3em;
-	font-family:$open-sans;
 
 	h1 {
-		padding-top: 0.6em;
 		font-weight: bold;
 		font-size: 4em;
 		color: $black;
-	}
-
-	h2 {
-		padding: 1em 1em 0 0;
 	}
 
 	.subtitle {
@@ -100,12 +85,17 @@ nav {
 
 	.portfolio-pic {
 		width: 300px;
+		display: block;
 		margin-left: 1em;
 	}
 }
 
-.services {
-	border: 1px solid red; // DEBUG
+.section {
+	// border: 5px solid red; // DEBUG
+
+	p {
+		padding: 2em;
+	}
 
 	h2 {
 		padding: 1rem 1rem;
@@ -139,47 +129,57 @@ footer {
 @media all and (min-width: 680px) {
 
     header {
-        flex-direction: row;
+		// border: 5px solid red; // DEBUG
         text-align: left;
-        vertical-align: center;
         width: 100%;
-        display: inline-block;
-    }
 
-        header > div#logo > div#navToggle {
+        div#logo > div#navToggle {
         display: none;    
-    }
+    	}
 
-        header > nav > ul {
+        nav > ul {
         display: flex;    
-    }
+    	}
 
-        header nav > ul > li > a {
+        nav > ul > li > a {
     	vertical-align: center;
         padding: 0 1.25rem;
-    }
+    	}
 
-        header nav > ul > li > a span.toggle {
+        nav > ul > li > a span.toggle {
         display: none;  
-    }
+        }
+	}
 
-    .about .portfolio-pic {
+    .about {
+		margin: 0.75em;
+		padding: 0 0 6em 3em;
+		font-family:$open-sans;
+
+		h1 {
+			padding-top: 1.5em;
+		}
+
+    	.portfolio-pic {
     	float:right;
-    }
-    
+	    }
+	}
 }
+
 @media only screen and (max-width: 680px) {
-        
+ 
     .about {
     	text-align: center;
 
 		.subtitle { 
 		// reduce title size, fold below image, align spacing.
 		font-size: 1rem;
+		padding-bottom: 2em;
 		}
 
 		.portfolio-pic {
 		//todo: move title and subtitle below, align spacing.
+		text-align: center;
 		}
 	}
 }
