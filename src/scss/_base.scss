@@ -19,6 +19,7 @@ $light-grey: #e6e5e6;
 $medium-grey: #878b8f;
 $dark-grey: #474b4f;
 $red: #ef5125;
+$pale-red: #ef4953;
 
 /*Typography variables*/
 $body-copy-color: $black;
@@ -38,7 +39,7 @@ a
 a:hover
 */
 
-html, body {
+html, body, {
   font-family: 'open-sans', sans-serif;
   font-size: $root-font-size;
 }
@@ -48,7 +49,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, .logo {
-	font-family: 'Rokkitt', serif;
+	font-family: $rokkitt, serif;
 }
 
 h1 {
@@ -58,6 +59,11 @@ h1 {
 
 h2 {
 	font-color: $half-black;
+}
+
+h3 {
+	font-size: 2rem;
+	color: $half-black;
 }
 
 title {
@@ -82,4 +88,8 @@ a:visited {
 
 p {
 
+}
+
+footer {
+	font-family: $open-sans, sans-serif;
 }

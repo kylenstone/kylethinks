@@ -60,7 +60,6 @@ header {
 	}
 }
 
-
 .content {
 	//no margin or padding settings here, we want background-color to span full width of browser when container width is at 100%.
 }
@@ -72,11 +71,6 @@ header {
 		font-weight: bold;
 		font-size: 4em;
 		color: $black;
-	}
-
-	.subtitle {
-		font-size: 2rem;
-		color: $half-black;
 	}
 
 	p {
@@ -92,9 +86,11 @@ header {
 
 .section {
 	// border: 5px solid red; // DEBUG
+	clear:both;
+	display:block;
 
 	p {
-		padding: 2em;
+		padding: 3em;
 	}
 
 	h2 {
@@ -104,6 +100,40 @@ header {
 		color: $half-white;
 		background-color: $black;
 	}
+
+	a {
+		color: inherit; // note this also impacts inline and footer links.
+	}
+
+	.grid-services {
+		max-width: 72rem;
+		margin: 1em auto;
+		text-align: center;
+	}
+
+	.service-item{
+		width:33.3%;
+		float:left;
+
+	.fa {
+		color: $pale-red;
+		}
+	}
+
+}
+
+.pro-summary {
+	margin: auto;
+	color: $half-black;
+	text-align: justify;
+	width: 60%
+}
+
+.dynamic-feeds {
+	// border: 5px solid red; // DEBUG
+	max-width: 72rem;
+	margin: 1em auto;
+	text-align: center;
 }
 
 .nav{
@@ -117,9 +147,24 @@ header {
 	padding: 0.5em; // adjust	
 }
 
+.contact{
+	text-align: center;	
+}
+.fa {
+	padding: 0.5em;
+}
+
 footer {
-	background-color: half-black;
+	border: 5px solid red; // DEBUG
+	background-color: $black;
+	color: $half-white;
 	font-size: 1.125rem;
+	padding: 1em;
+
+	.credits {
+		float:right;
+	}
+
 }
 
 // Responsive layout
@@ -152,6 +197,7 @@ footer {
 	}
 
     .about {
+    	clear: both;
 		margin: 0.75em;
 		padding: 0 0 6em 3em;
 		font-family:$open-sans;
@@ -163,6 +209,20 @@ footer {
     	.portfolio-pic {
     	float:right;
 	    }
+	}
+
+	.articles, .posts {
+		padding: 2em;
+		float: left; // note this reverses the order of apperance. (that's fine for now.)
+		width: 33.3%;
+
+		h3 {
+			padding-bottom: 1em;
+		}
+
+		li {
+			list-style: none;
+		}
 	}
 }
 
@@ -181,5 +241,17 @@ footer {
 		//todo: move title and subtitle below, align spacing.
 		text-align: center;
 		}
+	}
+
+	.pro-summary{
+		width: 90%;
+	}
+
+	.section .service-item {
+		width: 50%;
+	}
+
+	.articles, .posts {
+		width: 100%;
 	}
 }

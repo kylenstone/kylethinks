@@ -25,7 +25,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, .logo {
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif, serif;
 }
 
 h1 {
@@ -35,6 +35,11 @@ h1 {
 
 h2 {
   font-color: rgba(18, 25, 33, 0.5);
+}
+
+h3 {
+  font-size: 2rem;
+  color: rgba(18, 25, 33, 0.5);
 }
 
 title {
@@ -55,6 +60,10 @@ a:hover {
 
 a:visited {
   color: #121921;
+}
+
+footer {
+  font-family: "Open Sans", sans-serif, sans-serif;
 }
 
 /*layout styles:
@@ -118,11 +127,6 @@ header .nav-list a:hover {
   color: #121921;
 }
 
-.about .subtitle {
-  font-size: 2rem;
-  color: rgba(18, 25, 33, 0.5);
-}
-
 .about p {
   padding: 0 0 1em 0;
 }
@@ -133,8 +137,13 @@ header .nav-list a:hover {
   margin-left: 1em;
 }
 
+.section {
+  clear: both;
+  display: block;
+}
+
 .section p {
-  padding: 2em;
+  padding: 3em;
 }
 
 .section h2 {
@@ -143,6 +152,38 @@ header .nav-list a:hover {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.5);
   background-color: #121921;
+}
+
+.section a {
+  color: inherit;
+}
+
+.section .grid-services {
+  max-width: 72rem;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.section .service-item {
+  width: 33.3%;
+  float: left;
+}
+
+.section .service-item .fa {
+  color: #ef4953;
+}
+
+.pro-summary {
+  margin: auto;
+  color: rgba(18, 25, 33, 0.5);
+  text-align: justify;
+  width: 60%;
+}
+
+.dynamic-feeds {
+  max-width: 72rem;
+  margin: 1em auto;
+  text-align: center;
 }
 
 .nav {
@@ -155,9 +196,24 @@ header .nav-list a:hover {
   padding: 0.5em;
 }
 
+.contact {
+  text-align: center;
+}
+
+.fa {
+  padding: 0.5em;
+}
+
 footer {
-  background-color: half-black;
+  border: 5px solid red;
+  background-color: #121921;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.125rem;
+  padding: 1em;
+}
+
+footer .credits {
+  float: right;
 }
 
 /* Medium screens and larger */
@@ -180,6 +236,7 @@ footer {
     display: none;
   }
   .about {
+    clear: both;
     margin: 0.75em;
     padding: 0 0 6em 3em;
     font-family: "Open Sans", sans-serif;
@@ -189,6 +246,17 @@ footer {
   }
   .about .portfolio-pic {
     float: right;
+  }
+  .articles, .posts {
+    padding: 2em;
+    float: left;
+    width: 33.3%;
+  }
+  .articles h3, .posts h3 {
+    padding-bottom: 1em;
+  }
+  .articles li, .posts li {
+    list-style: none;
   }
 }
 
@@ -202,5 +270,14 @@ footer {
   }
   .about .portfolio-pic {
     text-align: center;
+  }
+  .pro-summary {
+    width: 90%;
+  }
+  .section .service-item {
+    width: 50%;
+  }
+  .articles, .posts {
+    width: 100%;
   }
 }
