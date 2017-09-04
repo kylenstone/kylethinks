@@ -7,14 +7,7 @@
 
 /*Typography variables*/
 /*layout*/
-/*base styles:
-html
-body
-form
-input
-a
-a:hover
-*/
+/*  base styles: html, body, form, input, a, a:[state]  */
 html, body {
   font-family: 'open-sans', sans-serif;
   font-size: 16px;
@@ -121,10 +114,10 @@ header .nav-list a:hover {
   color: #61c192;
 }
 
-.about h1 {
-  font-weight: bold;
-  font-size: 4em;
-  color: #121921;
+.content .meta {
+  font-family: "Rokkitt", serif;
+  color: #666;
+  padding-bottom: 2em;
 }
 
 .about p {
@@ -205,7 +198,6 @@ header .nav-list a:hover {
 }
 
 footer {
-  border: 5px solid red;
   background-color: #121921;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.125rem;
@@ -218,6 +210,12 @@ footer .credits {
 
 /* Medium screens and larger */
 @media all and (min-width: 680px) {
+  h1 {
+    padding-top: 1.5rem;
+    font-weight: bold;
+    font-size: 4em;
+    color: #121921;
+  }
   header {
     text-align: left;
     width: 100%;
@@ -242,7 +240,7 @@ footer .credits {
     font-family: "Open Sans", sans-serif;
   }
   .about h1 {
-    padding-top: 1.5em;
+    padding-top: 6rem;
   }
   .about .portfolio-pic {
     float: right;

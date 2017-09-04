@@ -61,17 +61,15 @@ header {
 }
 
 .content {
-	//no margin or padding settings here, we want background-color to span full width of browser when container width is at 100%.
+	.meta {
+		font-family: $rokkitt;
+		color: $dark-grey;
+		padding-bottom: 2em;
+	}	
 }
 
 .about {
 	// border: 1px solid red; // DEBUG
-
-	h1 {
-		font-weight: bold;
-		font-size: 4em;
-		color: $black;
-	}
 
 	p {
 		padding: 0 0 1em 0;
@@ -104,7 +102,7 @@ header {
 	h2 a, h2 a:hover {
 		color: inherit; // note this also impacts inline and footer links.
 	}
-	
+
 	.grid-services {
 		max-width: 72rem;
 		margin: 1em auto;
@@ -155,7 +153,7 @@ header {
 }
 
 footer {
-	border: 5px solid red; // DEBUG
+	// border: 5px solid red; // DEBUG
 	background-color: $black;
 	color: $half-white;
 	font-size: 1.125rem;
@@ -172,6 +170,14 @@ footer {
 /* Medium screens and larger */
 
 @media all and (min-width: 680px) {
+
+	// update global vars
+	h1 {
+		padding-top: 1.5rem;
+		font-weight: bold;
+		font-size: 4em;
+		color: $black;
+	}
 
     header {
 		// border: 5px solid red; // DEBUG
@@ -203,7 +209,7 @@ footer {
 		font-family:$open-sans;
 
 		h1 {
-			padding-top: 1.5em;
+			padding-top: 6rem;
 		}
 
     	.portfolio-pic {
