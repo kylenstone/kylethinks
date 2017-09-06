@@ -18,6 +18,11 @@ header {
 		float:left;
 		color: $white;
 		font-size: 2rem;
+		
+		a {
+			color: $white;
+			text-decoration: none;
+		}
 	}
 
 	nav {

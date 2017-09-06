@@ -86,6 +86,11 @@ header #logo {
   font-size: 2rem;
 }
 
+header #logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 header nav {
   float: right;
 }
@@ -310,3 +315,7 @@ footer .credits {
 }
 
 /* Desktops and laptops ----------- */
+.back-to-home {
+  margin: 0.6rem 1rem;
+  float: left;
+}
