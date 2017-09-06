@@ -234,7 +234,7 @@ footer .credits {
   }
   .about .portfolio-pic {
     text-align: center;
-    padding: 1em auto;
+    padding-top: 0.75rem;
   }
   .pro-summary {
     width: 90%;
@@ -306,8 +306,12 @@ footer .credits {
 
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (min-width: 681px) and (max-width: 1024px) {
+  .about h1 {
+    padding-top: 2.5rem;
+  }
   .sub {
     display: block;
+    font-size: 1.5rem;
   }
 }
 
