@@ -10,9 +10,9 @@ Build production site with `npm run production`
 
 var
 // env
+  consoleLog = false,
   devBuild = ((process.env.NODE_ENV || '').trim().toLowerCase() !== 'production'),
   pkg = require('./package.json'),  
-
 
 // main directories
   dir = {
@@ -23,10 +23,11 @@ var
 
 // modules
 	metalsmith = require('metalsmith'),
+	debug = require('metalsmith-debug'),
 	markdown = require('metalsmith-markdown'),
-	collections = require('metalsmith-collections'),	
-	layouts = require('metalsmith-layouts'),
+	collections = require('metalsmith-collections'),
 	permalinks = require('metalsmith-permalinks'),
+	layouts = require('metalsmith-layouts'),
 	handlebars = require('handlebars'),
 	sass = require('metalsmith-sass'),
 	coffee = require('metalsmith-coffee'),
@@ -64,7 +65,7 @@ var ms = metalsmith(dir.base)
 			}
 		}))
 	.use(permalinks({
-		pattern: ':collections/:title',
+		pattern: ':collection/:title',
 		relative: false
 	}))
     .use(layouts({
@@ -90,6 +91,7 @@ ms
 	    source: dir.source + 'assets/',
 	    destination: 'assets/'
 	}))
+	.use(debug())
 	.build(function (err)  {
 		if (err) {
 			console.log(err);

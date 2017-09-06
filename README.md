@@ -32,3 +32,10 @@ The best description I've found comes from Mark "Keeto" Obcena at [Keetology](ht
 
 ### assets ###
 assets from the `src` folder are included in this repo but their duplicates in `public/assets` are ignored via a rule in the `.gitignore` file.  This may require `build`ing the site for everything to load correctly.
+
+## Debugging
+
+Requires `metalsmith-debug`
+
+Set an environment variable to enable debug info in the console:
+`NODE_ENV=dev DEBUG=metalsmith:* node build`

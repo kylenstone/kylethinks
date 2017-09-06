@@ -14,7 +14,7 @@ In this article I advance my own definition of servant leadership, and identify 
 ## What is servant leadership?  
 
 
-Servant leadership is a mindset that combines qualities of [selflessness, patience and empathy](#servant_leader_qualities/) with a management philosophy designed to motivate employees and foster growth.  Managers who embrace the creative potential of servant leadership drive cohesion and positive thinking through their teams and shape their organizations to become more resilient and competitive.
+Servant leadership is a mindset that combines qualities of [selflessness, patience and empathy](../servant_leader_qualities) with a management philosophy designed to motivate employees and foster growth.  Managers who embrace the creative potential of servant leadership drive cohesion and positive thinking through their teams and shape their organizations to become more resilient and competitive.
 
 ## Inspire trust
 Assigning work is a fundamental part of effective management.  The most straightforward way to inspire trust is through artful and deliberate assignment of work.  Before directing employees, the servant leader evaluates the needs of their organization, prioritizes unmet needs, and identifies areas where the diligence she will foster among her team will make maximum impact.  Weighing each employees strengths and weaknesses, she assigns work to employees based on fit according to specific and observable criteria:

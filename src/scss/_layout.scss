@@ -9,6 +9,8 @@ nav
 quote
 */
 
+/* GLOBAL ELEMENTS ----------- */
+
 header {
 	padding: 2.5rem;
 	background-color: $black;
@@ -18,7 +20,7 @@ header {
 		float:left;
 		color: $white;
 		font-size: 2rem;
-		
+
 		a {
 			color: $white;
 			text-decoration: none;
@@ -175,6 +177,10 @@ footer {
 
 }
 
+/* BLOG LAYOUT ----------- */
+
+
+
 /*
  * MEDIA QUERIES 
  */
@@ -219,9 +225,8 @@ footer {
 /* Small tablets and larger (portrait and landscape) ----------- */
 
 
-	// update global vars
+	// TODO refactor and remove, these styles are too binding
 	h1 {
-		padding-top: 1.5rem;
 		font-weight: bold;
 		font-size: 4em;
 		color: $black;
@@ -255,7 +260,7 @@ footer {
 		padding: 0.75rem 0.75rem 6.25rem 3rem;
 		font-family:$open-sans;
 
-		h1 {
+		.about-title {
 			padding-top: 5rem;
 		}
 
