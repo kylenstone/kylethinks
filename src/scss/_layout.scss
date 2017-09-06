@@ -69,11 +69,7 @@ header {
 }
 
 .about {
-	// border: 1px solid red; // DEBUG
-
-	p {
-		padding: 0 0 1em 0;
-	}
+	// border: 5px solid red; // DEBUG
 
 	.portfolio-pic {
 		width: 300px;
@@ -90,7 +86,7 @@ header {
 	clear:both;
 
 	p {
-		padding: 3em; // fairly inflexible rule.  TODO refactor
+		padding: 3rem; // fairly inflexible rule.  TODO refactor
 	}
 
 	h2 {
@@ -119,6 +115,7 @@ header {
 
 	.fa {
 		color: $pale-red;
+		padding: 0.5em;
 		}
 	
 	p {
@@ -157,17 +154,15 @@ header {
 
 .contact{
 	text-align: center;	
-}
-.fa {
-	padding: 0.5em;
+	padding: 1rem;
 }
 
 footer {
 	// border: 5px solid red; // DEBUG
-	background-color: $black;
-	color: $half-white;
+	background-color: $medium-grey;
+	color: $black;
 	font-size: 1.125rem;
-	padding: 1em;
+	padding: 2em;
 
 	.credits {
 		float:right;
@@ -214,7 +209,8 @@ footer {
 	}
 }
 
-@media all and (min-width: 680px) {
+@media all and (min-width: 680px) 
+{
 /* Small tablets and larger (portrait and landscape) ----------- */
 
 
@@ -251,12 +247,11 @@ footer {
 
     .about {
     	clear: both;
-		margin: 0.75em;
-		padding: 0 0 4.5em 3em;
+		padding: 0.75rem 0.75rem 6.25rem 3rem;
 		font-family:$open-sans;
 
 		h1 {
-			padding-top: 6rem;
+			padding-top: 5rem;
 		}
 
     	.portfolio-pic {
@@ -288,18 +283,19 @@ footer {
 and (min-width : 681px) 
 and (max-width : 1024px) {
 
-	.about h1 {
-		padding-top: 2.5rem;
-	}
-
 	.sub {
 		display: block;
 		font-size: 1.5rem;
+	}
+
+	.about {
+		padding-bottom: 3rem;
 	}
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+
 }
 

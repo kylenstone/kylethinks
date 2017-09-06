@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans);
+@import url("https://fontlibrary.org/face/butler");
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +62,7 @@ p {
 }
 
 footer {
-  font-family: "Open Sans", sans-serif, sans-serif;
+  font-family: "Butler", sans-serif, sans-serif;
 }
 
 /*layout styles:
@@ -125,10 +126,6 @@ header .nav-list a:hover {
   padding-bottom: 2em;
 }
 
-.about p {
-  padding: 0 0 1em 0;
-}
-
 .about .portfolio-pic {
   width: 300px;
 }
@@ -142,7 +139,7 @@ header .nav-list a:hover {
 }
 
 .section p {
-  padding: 3em;
+  padding: 3rem;
 }
 
 .section h2 {
@@ -172,6 +169,7 @@ header .nav-list a:hover {
 
 .section .service-item .fa {
   color: #ef4953;
+  padding: 0.5em;
 }
 
 .section .service-item p {
@@ -203,17 +201,14 @@ header .nav-list a:hover {
 
 .contact {
   text-align: center;
-}
-
-.fa {
-  padding: 0.5em;
+  padding: 1rem;
 }
 
 footer {
-  background-color: #121921;
-  color: rgba(255, 255, 255, 0.5);
+  background-color: #878b8f;
+  color: #121921;
   font-size: 1.125rem;
-  padding: 1em;
+  padding: 2em;
 }
 
 footer .credits {
@@ -278,12 +273,11 @@ footer .credits {
   }
   .about {
     clear: both;
-    margin: 0.75em;
-    padding: 0 0 4.5em 3em;
+    padding: 0.75rem 0.75rem 6.25rem 3rem;
     font-family: "Open Sans", sans-serif;
   }
   .about h1 {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
   .about .portfolio-pic {
     float: right;
@@ -306,12 +300,12 @@ footer .credits {
 
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (min-width: 681px) and (max-width: 1024px) {
-  .about h1 {
-    padding-top: 2.5rem;
-  }
   .sub {
     display: block;
     font-size: 1.5rem;
+  }
+  .about {
+    padding-bottom: 3rem;
   }
 }
 
