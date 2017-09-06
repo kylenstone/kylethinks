@@ -5,8 +5,6 @@ collection: article
 description: "Why some of the most impactful leaders fight for seats in the back of the room."
 ---
 
-# Qualities of the Servant Leader
-
 ## Selflessness
 Bouts of self-aggrandizement may be standard fare for (*white male*) [VC partners](#ellen-pow), but are absolutely toxic to the servant leader's mentality.  I recently saw the morale of a project management team fall to pieces when a star from another department joined the team, only to overhear a PM brag it was mostly his advocacy that got her the job.  Thus in a a single arrogant outburst the team's cohesiveness was decimated, along with the boastful PM's chances of earning recognition as a leader on the team.  The lesson?  
 

@@ -41,8 +41,12 @@ html, body, {
 	overflow: auto;
 }
 
-h1, h2, h3, h4, h5, h6, .logo {
-	font-family: $rokkitt, serif;
+h1, h2, h3, h4, h5, h6, {
+	font-family: $open-sans, serif;
+}
+
+.logo {
+	font-family: $rokkitt;
 }
 
 h1 {
@@ -77,6 +81,7 @@ a:hover {
 
 p {
 	color: $dark-grey;
+	line-height: 1.5rem;
 }
 
 footer {

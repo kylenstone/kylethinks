@@ -5,14 +5,16 @@ collection: article
 description: "Why some of the most impactful leaders fight for seats in the back of the room."
 ---
 
+Half a century ago, Peter Drucker summarized a fundamental shift in the world of work with a typically concise epigram: workers no longer need strong hands, they need effective minds [[1](https://en.wikipedia.org/wiki/Knowledge_economy)].  Four decades later, the same Drucker elaborated that in traditional workforces, workers served the system; but in a knowledge workforce, [the system must serve the worker](https://hbr.org/2002/02/theyre-not-employees-theyre-people).
+
+What does it mean for an organization to embrace the notion that it serves its workers?  What do 'servants' actually do within an organization, and what do they seek to accomplish?  
+
+In this article I advance my own definition of servant leadership, and identify its core components.  Servant leadership, of course, has been written up thousands of times in hundreds of ways.  Yet most explanations stop short of practical guidance for embodying the idea in a way that can be put to use in day-to-day workplace scenarios.  My explication is most applicable to small to medium-sized technology companies, but should carry weight in other environments as well.
+
 ## What is servant leadership?  
-Servant leadership is a mindset that combines [qualities of selflessness, patience and empathy](#servant_leader_qualities/) with a management strategy that motivates employees and fosters growth.  Managers who embrace the creative potentials of the servant leader mentality drive cohesion and positive thinking through their teams and increase resilience in their organizations.
 
-Drucker: "In a knowledge-based organization, however, it is the individual worker’s productivity that makes the entire system successful.  In a traditional workforce, the worker serves the system; in a knowledge workforce, the system must serve the worker."
 
-IMPROVE In this article I'll try to spell out how servant leadership works and how it can help in the long run.
-
-What does the servant leader need to do?  I'll provide the three key components.
+Servant leadership is a mindset that combines qualities of [selflessness, patience and empathy](#servant_leader_qualities/) with a management philosophy designed to motivate employees and foster growth.  Managers who embrace the creative potential of servant leadership drive cohesion and positive thinking through their teams and shape their organizations to become more resilient and competitive.
 
 ## Inspire trust
 Assigning work is a fundamental part of effective management.  The most straightforward way to inspire trust is through artful and deliberate assignment of work.  Before directing employees, the servant leader evaluates the needs of their organization, prioritizes unmet needs, and identifies areas where the diligence she will foster among her team will make maximum impact.  Weighing each employees strengths and weaknesses, she assigns work to employees based on fit according to specific and observable criteria:
@@ -56,4 +58,6 @@ Even the insinuation that somebody *could* represent themselves as a leader can 
 ## Conclusion
 *"People who become known for inclusiveness and smart decisions tend to develop influence far more consistently than those who believe they have all the answers." ~ Carol A. Walker*
 
-Greatness results from seeing the potential in people and spending time developing it.  Find people in your organization who inspire you.  Know them and be known by them.  Listen to them and include their goals in your own agenda for growth.  Fight for a seat in the back of the room.  
+Greatness results from seeing the potential in people and spending time developing it.  Find people in your organization who inspire you.  Know them and be known by them.  Listen to them empathically, treat them inclusively, and incorporate their goals in your own agenda for growth.
+
+Join me in fighting for a seat in the back of the room.

@@ -17,8 +17,12 @@ html, body {
   overflow: auto;
 }
 
-h1, h2, h3, h4, h5, h6, .logo {
-  font-family: "Rokkitt", serif, serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif, serif;
+}
+
+.logo {
+  font-family: "Rokkitt", serif;
 }
 
 h1 {
@@ -53,6 +57,7 @@ a:hover {
 
 p {
   color: #666;
+  line-height: 1.5rem;
 }
 
 footer {
@@ -126,8 +131,10 @@ header .nav-list a:hover {
 
 .about .portfolio-pic {
   width: 300px;
-  display: block;
-  margin-left: 1em;
+}
+
+.about .sub {
+  padding-right: 2rem;
 }
 
 .section {
@@ -136,7 +143,6 @@ header .nav-list a:hover {
 
 .section p {
   padding: 3em;
-  text-align: justify;
 }
 
 .section h2 {
@@ -155,20 +161,26 @@ header .nav-list a:hover {
   max-width: 72rem;
   margin: 1em auto;
   text-align: center;
+  padding: 0.5rem;
 }
 
 .section .service-item {
-  width: 33.3%;
+  width: 30%;
   float: left;
+  padding-bottom: 1rem;
 }
 
 .section .service-item .fa {
   color: #ef4953;
 }
 
+.section .service-item p {
+  padding: 2rem 1rem;
+}
+
 .pro-summary {
   margin: auto;
-  color: rgba(18, 25, 33, 0.5);
+  color: #666;
   text-align: justify;
   width: 60%;
 }
@@ -208,8 +220,39 @@ footer .credits {
   float: right;
 }
 
-/* Medium screens and larger */
+/*
+ * MEDIA QUERIES 
+ */
+/* Smartphones and small tablets (portrait and landscape) ----------- */
+@media only screen and (max-width: 680px) {
+  .about {
+    text-align: center;
+  }
+  .about .subtitle {
+    font-size: 1rem;
+    padding-bottom: 2em;
+  }
+  .about .portfolio-pic {
+    text-align: center;
+    padding: 1em auto;
+  }
+  .pro-summary {
+    width: 90%;
+  }
+  .section .service-item {
+    width: 100%;
+  }
+  .section .service-item p {
+    padding: 3em 6em;
+    text-align: left;
+  }
+  .articles, .posts {
+    width: 100%;
+  }
+}
+
 @media all and (min-width: 680px) {
+  /* Small tablets and larger (portrait and landscape) ----------- */
   h1 {
     padding-top: 1.5rem;
     font-weight: bold;
@@ -236,7 +279,7 @@ footer .credits {
   .about {
     clear: both;
     margin: 0.75em;
-    padding: 0 0 6em 3em;
+    padding: 0 0 4.5em 3em;
     font-family: "Open Sans", sans-serif;
   }
   .about h1 {
@@ -256,30 +299,16 @@ footer .credits {
   .articles li, .posts li {
     list-style: none;
   }
+  .articles .title, .articles .date, .posts .title, .posts .date {
+    line-height: 1.5rem;
+  }
 }
 
-@media only screen and (max-width: 680px) {
-  .about {
-    text-align: center;
-  }
-  .about .subtitle {
-    font-size: 1rem;
-    padding-bottom: 2em;
-  }
-  .about .portfolio-pic {
-    text-align: center;
-  }
-  .pro-summary {
-    width: 90%;
-  }
-  .section .service-item {
-    width: 100%;
-  }
-  .section .service-item p {
-    padding: 3em 6em;
-    text-align: justify;
-  }
-  .articles, .posts {
-    width: 100%;
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 681px) and (max-width: 1024px) {
+  .sub {
+    display: block;
   }
 }
+
+/* Desktops and laptops ----------- */

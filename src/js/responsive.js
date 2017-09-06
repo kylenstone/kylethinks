@@ -7,7 +7,7 @@
     });
     
     $(window).resize(function() {
-        if($( window ).width() >= "600") {
+        if($( window ).width() >= "680") {
             $("header > nav").css("display", "block");
             
             if($("#logo").attr('class') == "menuDown") {
@@ -20,7 +20,7 @@
     });
     
     $("header > nav > ul > li > a").click(function(e) {
-        if($( window ).width() <= "600") {
+        if($( window ).width() <= "680") {
             if($(this).siblings().size() > 0 ) {
                 $(this).siblings().slideToggle("fast")
                 $(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');

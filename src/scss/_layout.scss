@@ -77,9 +77,12 @@ header {
 
 	.portfolio-pic {
 		width: 300px;
-		display: block;
-		margin-left: 1em;
 	}
+
+	.sub {
+		padding-right: 2rem;
+	}
+
 }
 
 .section {
@@ -88,7 +91,6 @@ header {
 
 	p {
 		padding: 3em; // fairly inflexible rule.  TODO refactor
-		text-align: justify;
 	}
 
 	h2 {
@@ -107,22 +109,30 @@ header {
 		max-width: 72rem;
 		margin: 1em auto;
 		text-align: center;
+		padding: 0.5rem;
 	}
 
 	.service-item{
-		width:33.3%;
+		width:30%;
 		float:left;
+		padding-bottom: 1rem;
 
 	.fa {
 		color: $pale-red;
 		}
+	
+	p {
+		padding: 2rem 1rem;
+	}
+
+
 	}
 
 }
 
 .pro-summary {
 	margin: auto;
-	color: $half-black;
+	color: $dark-grey;
 	text-align: justify;
 	width: 60%
 }
@@ -165,11 +175,48 @@ footer {
 
 }
 
-// Responsive layout
+/*
+ * MEDIA QUERIES 
+ */
 
-/* Medium screens and larger */
+/* Smartphones and small tablets (portrait and landscape) ----------- */
+@media only screen and (max-width: 680px) {
+ 
+    .about {
+    	text-align: center;
+
+		.subtitle { 
+		font-size: 1rem;
+		padding-bottom: 2em;
+		}
+
+		.portfolio-pic {
+			text-align: center;
+			padding: 1em auto;
+		}
+	}
+
+	.pro-summary{
+		width: 90%;
+	}
+
+	.section .service-item {
+		width: 100%;
+
+		p {
+			padding: 3em 6em;
+			text-align: left;
+		}
+	}
+
+	.articles, .posts {
+		width: 100%;
+	}
+}
 
 @media all and (min-width: 680px) {
+/* Small tablets and larger (portrait and landscape) ----------- */
+
 
 	// update global vars
 	h1 {
@@ -205,7 +252,7 @@ footer {
     .about {
     	clear: both;
 		margin: 0.75em;
-		padding: 0 0 6em 3em;
+		padding: 0 0 4.5em 3em;
 		font-family:$open-sans;
 
 		h1 {
@@ -213,7 +260,7 @@ footer {
 		}
 
     	.portfolio-pic {
-    	float:right;
+    		float:right;
 	    }
 	}
 
@@ -229,40 +276,25 @@ footer {
 		li {
 			list-style: none;
 		}
+
+		.title, .date {
+			line-height: 1.5rem;
+		}
 	}
 }
 
-@media only screen and (max-width: 680px) {
- 
-    .about {
-    	text-align: center;
+/* Tablets (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 681px) 
+and (max-width : 1024px) {
 
-		.subtitle { 
-		// reduce title size, fold below image, align spacing.
-		font-size: 1rem;
-		padding-bottom: 2em;
-		}
-
-		.portfolio-pic {
-		//todo: move title and subtitle below, align spacing.
-		text-align: center;
-		}
-	}
-
-	.pro-summary{
-		width: 90%;
-	}
-
-	.section .service-item {
-		width: 100%;
-
-		p {
-			padding: 3em 6em;
-			text-align: justify;
-		}
-	}
-
-	.articles, .posts {
-		width: 100%;
+	.sub {
+		display: block;
 	}
 }
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+}
+

@@ -12,11 +12,11 @@ Reflection helped me realize how seldomly I've paused to distill the fundamental
 I hope my reflections will be useful to like-minded managers who are are looking to do right by their teams and overcome obstacles in their own careers.  True,
 there's no shortage of advice columns touting the latest project management methodologies, industry trends, and "secrets to success."  Yet most of the prominent PM resources stop short of offering *real strategies* for managing highly complex initiatives.  Nor do they help build the style of leadership I've observed as a constantly unmet need within the organizations I've worked for.  *You know, the kind you need when you're in from of the whiteboard, trying to explain something you barely understand yourself, with a bunch of nervous, blinking faces staring at you...*
 
-# Why write a blog?
+## Why write a blog?
 
 Every project manager worth their salt should consider how they can advance their discipline in a way that is beneficial to the public and absolutely free.  Our coworkers are already doing this.  Your engineering teammates may contribute to [open-source](http://tom.preston-werner.com/2011/11/22/open-source-everything.html) software initiatives, building a foundation for high quality software for the benefit of all.  Even the most lucrative apps rely on this bedrock even as they shake up markets or transform the way we relate to one another.  I've yet to meet a product manager who refused to offer feedback on another product so long as their peer pitched or demo'ed in a polite way.  As project management professionals, we cannot keep our most powerful learnings buried in the white walls they were born within.  Every effective idea deserves to be set free.  Our job is to constantly move ahead to develop even more powerful ideas.
 
-# Upcoming posts
+## Upcoming posts
 Here's a taste of some concepts I'll examine in upcoming posts:
 
 - Service leadership, which helped me internalize and eventually master some of the thornier, ill-understood aspects of software production and workplace motivation.
