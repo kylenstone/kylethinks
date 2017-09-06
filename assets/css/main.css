@@ -1,0 +1,321 @@
+@import url(https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans);
+@import url("https://fontlibrary.org/face/butler");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Typography variables*/
+/*layout*/
+/*  base styles: html, body, form, input, a, a:[state]  */
+html, body {
+  font-family: 'open-sans', sans-serif;
+  font-size: 16px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif, serif;
+}
+
+.logo {
+  font-family: "Rokkitt", serif;
+}
+
+h1 {
+  color: #121921;
+  font-size: 2rem;
+}
+
+h2 {
+  font-color: rgba(18, 25, 33, 0.5);
+}
+
+h3 {
+  font-size: 2rem;
+  color: rgba(18, 25, 33, 0.5);
+}
+
+title {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+a, a:visited {
+  color: #666;
+}
+
+a:hover {
+  color: #ef5125;
+}
+
+p {
+  color: #666;
+  line-height: 1.5rem;
+}
+
+footer {
+  font-family: "Butler", sans-serif, sans-serif;
+}
+
+/*layout styles:
+header
+article
+post
+footer
+blog
+nav
+quote
+*/
+header {
+  padding: 2.5rem;
+  background-color: #121921;
+  font-family: "Rokkitt", serif;
+}
+
+header #logo {
+  float: left;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+header #logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul > li > a {
+  color: rgba(18, 25, 33, 0.5);
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+header div#logo > div#navToggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header div#logo > div#navToggle > a {
+  color: #ffffff;
+  padding: 0 2.5rem;
+  text-decoration: none;
+}
+
+header .nav-list {
+  list-style-type: none;
+}
+
+header .nav-list a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+header .nav-list a:hover {
+  color: #61c192;
+}
+
+.content .meta {
+  font-family: "Rokkitt", serif;
+  color: #666;
+  padding-bottom: 2em;
+}
+
+.about .portfolio-pic {
+  width: 300px;
+}
+
+.about .sub {
+  padding-right: 2rem;
+}
+
+.section {
+  clear: both;
+}
+
+.section p {
+  padding: 3rem;
+}
+
+.section h2 {
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #121921;
+}
+
+.section h2 a, .section h2 a:hover {
+  color: inherit;
+}
+
+.section .grid-services {
+  max-width: 72rem;
+  margin: 1em auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.section .service-item {
+  width: 30%;
+  float: left;
+  padding-bottom: 1rem;
+}
+
+.section .service-item .fa {
+  color: #ef4953;
+  padding: 0.5em;
+}
+
+.section .service-item p {
+  padding: 2rem 1rem;
+}
+
+.pro-summary {
+  margin: auto;
+  color: #666;
+  text-align: justify;
+  width: 60%;
+}
+
+.dynamic-feeds {
+  max-width: 72rem;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-content: center;
+  max-height: 6.42;
+  background-color: #121921;
+  padding: 0.5em;
+}
+
+.contact {
+  text-align: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #878b8f;
+  color: #121921;
+  font-size: 1.125rem;
+  padding: 2em;
+}
+
+footer .credits {
+  float: right;
+}
+
+/*
+ * MEDIA QUERIES 
+ */
+/* Smartphones and small tablets (portrait and landscape) ----------- */
+@media only screen and (max-width: 680px) {
+  .about {
+    text-align: center;
+  }
+  .about .subtitle {
+    font-size: 1rem;
+    padding-bottom: 2em;
+  }
+  .about .portfolio-pic {
+    text-align: center;
+    padding-top: 0.75rem;
+  }
+  .pro-summary {
+    width: 90%;
+  }
+  .section .service-item {
+    width: 100%;
+  }
+  .section .service-item p {
+    padding: 3em 6em;
+    text-align: left;
+  }
+  .articles, .posts {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 680px) {
+  /* Small tablets and larger (portrait and landscape) ----------- */
+  h1 {
+    padding-top: 1.5rem;
+    font-weight: bold;
+    font-size: 4em;
+    color: #121921;
+  }
+  header {
+    text-align: left;
+    width: 100%;
+  }
+  header div#logo > div#navToggle {
+    display: none;
+  }
+  header nav > ul {
+    display: flex;
+  }
+  header nav > ul > li > a {
+    vertical-align: center;
+    padding: 0 1.25rem;
+  }
+  header nav > ul > li > a span.toggle {
+    display: none;
+  }
+  .about {
+    clear: both;
+    padding: 0.75rem 0.75rem 6.25rem 3rem;
+    font-family: "Open Sans", sans-serif;
+  }
+  .about h1 {
+    padding-top: 5rem;
+  }
+  .about .portfolio-pic {
+    float: right;
+  }
+  .articles, .posts {
+    padding: 2em;
+    float: left;
+    width: 33.3%;
+  }
+  .articles h3, .posts h3 {
+    padding-bottom: 1em;
+  }
+  .articles li, .posts li {
+    list-style: none;
+  }
+  .articles .title, .articles .date, .posts .title, .posts .date {
+    line-height: 1.5rem;
+  }
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 681px) and (max-width: 1024px) {
+  .sub {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .about {
+    padding-bottom: 3rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+.back-to-home {
+  margin: 0.6rem 1rem;
+  float: left;
+}

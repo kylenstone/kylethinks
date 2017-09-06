@@ -26,6 +26,7 @@ var
 	markdown = require('metalsmith-markdown'),
 	collections = require('metalsmith-collections'),	
 	layouts = require('metalsmith-layouts'),
+	permalinks = require('metalsmith-permalinks'),
 	handlebars = require('handlebars'),
 	sass = require('metalsmith-sass'),
 	coffee = require('metalsmith-coffee'),
@@ -61,12 +62,11 @@ var ms = metalsmith(dir.base)
 				name: 'post'
 				}
 			}
-		}))	
-    .use(sass({
-    	outputStyle: 'expanded',
-    	outputDir: './css'
-    }))
-	.use(coffee())
+		}))
+	.use(permalinks({
+		pattern: ':collections/:title',
+		relative: false
+	}))
     .use(layouts({
             engine: 'handlebars',
             directory: './layouts',
@@ -74,6 +74,11 @@ var ms = metalsmith(dir.base)
             pattern: ["*/*/*html","*/*html","*html"],
             partials: 'layouts/partials'
         }))
+    .use(sass({
+    	outputStyle: 'expanded',
+    	outputDir: 'assets/css'
+    }))
+	.use(coffee())
 
 if (browsersync) ms.use(browsersync({ // start test server
   server: dir.dest,
