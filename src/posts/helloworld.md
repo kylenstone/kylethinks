@@ -4,6 +4,7 @@ date: "2017-08-15"
 collection: post
 description: "This summer I spent a late night taking stock of my journey from a first-time project manager to a project management professional and technology team leader.  That's how this blog was born."
 ---
+![Hello World TV](/assets/img/helloworld-img.png "Technology on the beach")
 
 This summer I spent a late night taking stock of my journey from a first-time project manager to a project management professional and technology team leader.  I spent most of the last decade immersed in technology initiatives with teams and clients I've loved getting to know (well, *mostly.*)  The highest profile [initiatives](#) appear in hindsight as not only the most enjoyable, but also those I had the most success with.  As for the failures?  Each one clarified what, in despite of my penetrating optimism about the world, I'm simply no good at.
 
