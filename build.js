@@ -25,6 +25,7 @@ var
 	metalsmith = require('metalsmith'),
 	debug = require('metalsmith-debug'),
 	markdown = require('metalsmith-markdown'),
+	wordcount = require('metalsmith-word-count'),
 	collections = require('metalsmith-collections'),
 	permalinks = require('metalsmith-permalinks'),
 	layouts = require('metalsmith-layouts'),
@@ -64,6 +65,9 @@ var ms = metalsmith(dir.base)
 				}
 			}
 		}))
+    .use(wordcount({
+    	raw: true    	
+    }))
 	.use(permalinks({
 		pattern: ':collection/:title',
 		relative: false
