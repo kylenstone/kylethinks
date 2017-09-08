@@ -67,14 +67,6 @@ header {
 	}
 }
 
-.content {
-	.meta {
-		font-family: $rokkitt;
-		color: $dark-grey;
-		padding-bottom: 2em;
-	}	
-}
-
 .about {
 	// border: 5px solid red; // DEBUG
 
@@ -215,8 +207,12 @@ footer {
 		}
 	}
 
-	.articles, .posts {
+	article{
 		width: 100%;
+	}
+
+	post {
+
 	}
 }
 
@@ -242,8 +238,9 @@ footer {
     	}
 
         nav > ul {
-        display: flex;    
-    	}
+        display: flex;
+        line-height: 1rem;
+	    }
 
         nav > ul > li > a {
     	vertical-align: center;
@@ -252,6 +249,10 @@ footer {
 
         nav > ul > li > a span.toggle {
         display: none;  
+        }
+
+        li {
+        	line-height: 1rem;
         }
 	}
 

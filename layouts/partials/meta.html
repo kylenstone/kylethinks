@@ -1,5 +1,7 @@
-<div class="meta">
-  {{#if date}}Published: {{ date }}{{/if}}
-  &nbsp;&nbsp;&nbsp;&nbsp; {{ wordCount }} words &nbsp;&nbsp;|&nbsp;&nbsp; 
-  {{ readingTime }} min read
+<div class="content-tools">
+  <ul class="plain-inline-list">
+  	<li class="utility text-center has-padding-right">{{#if date}}Published: {{ date }}{{/if}}</li>
+  	<li class="utility text-center has-padding-right">{{ wordCount }} words</li>
+  	<li class="utility text-center">{{ readingTime }} min read</li>
+  </ul>
 </div>

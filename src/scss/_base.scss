@@ -34,16 +34,17 @@ $desktop: 1080px;
 
 /*  base styles: html, body, form, input, a, a:[state]  */
 
-html, body, {
-  font-family: 'open-sans', sans-serif;
-  font-size: $root-font-size;
-}
-
 .clearfix {
 	overflow: auto;
 }
 
-h1, h2, h3, h4, h5, h6, {
+html, body, {
+  font-family: 'open-sans', sans-serif;
+  font-size: $root-font-size;
+  background-color: $white;
+}
+
+h1, h2, h3, h4, h5, h6, title {
 	font-family: $open-sans, serif;
 }
 
@@ -65,14 +66,6 @@ h3 {
 	color: $half-black;
 }
 
-title {
-	font-family: 'Open Sans', sans-serif;
-}
-
-body {
-	background-color: $white;
-}
-
 a, a:visited {
 	color: $dark-grey;
 }
@@ -82,8 +75,18 @@ a:hover {
 }
 
 p {
+	margin-bottom: 1.5rem;
 	color: $dark-grey;
-	line-height: 1.5rem;
+	line-height: 2rem;
+}
+
+p, ul, li {
+	color: $dark-grey;
+	line-height: 2rem;
+}
+
+ul {
+	padding-left: 2rem;
 }
 
 footer {

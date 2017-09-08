@@ -9,10 +9,36 @@
 	font-size: 1.25rem;
 	color: $pale-red;
 	margin: 1.5rem 0 0 2rem;
+	text-transform: uppercase;
 }
 
 article {
-	h1, .meta, p {
-	margin-left: 2rem;
+	padding: 0 12rem 0 4rem;
+
+	h2 {
+		padding: 2rem 0 1rem 0;
 	}
+}
+
+.content {
+
+	.content-tools {
+		font-family: $rokkitt;
+		color: $dark-grey;
+		padding: 1rem 0;
+		font-size: 0.9rem;
+		letter-spacing: 0.0625rem;
+		vertical-align: middle;
+	}	
+
+	.plain-inline-list > li {
+		list-style: none;
+		display: inline-block;
+		white-space: nowrap;
+		}
+
+	.utility.text-center.has-padding-right {
+		padding-right: 4rem;
+		}
+
 }
