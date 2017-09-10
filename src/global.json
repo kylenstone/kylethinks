@@ -1,7 +1,7 @@
 {
     "url": "http://kylethinks.com",
-    "title": "Kyle Stone",
-    "description": "Kyle Stone's Professional Blog",
+    "title": "Kyle Thinks",
+    "description": "Kyle Stone: Agile leader, digital project manager, strategic thinker",
     "rss": {
         "title": "Kyle Stone's blog"
     },
@@ -31,7 +31,7 @@
         "class": "github",
         "icon": "github"
     }, {
-        "url": "http://www.instagram.com/brophdawg11",
+        "url": "http://www.instagram.com/kylenstone",
         "title": "Instagram",
         "class": "instagram",
         "icon": "instagram"

@@ -26,19 +26,69 @@ article {
 		font-family: $rokkitt;
 		color: $dark-grey;
 		padding: 1rem 0;
-		font-size: 0.9rem;
+		font-size: 1.2rem;
 		letter-spacing: 0.0625rem;
 		vertical-align: middle;
-	}	
+	}
+
+	.plain-inline-list {
+		display: inline;
+	}
 
 	.plain-inline-list > li {
 		list-style: none;
-		display: inline-block;
+		display: inline;
 		white-space: nowrap;
 		}
 
-	.utility.text-center.has-padding-right {
+	.has-padding-right {
 		padding-right: 4rem;
 		}
 
+	.has-padding-left {
+		padding-left: 4rem;
+		}
+}
+
+// Nav share elements
+.content-share {
+	display:inline;
+
+    .post-share-email {
+        .fa {
+            padding: 5px;
+            border-radius: 50%;
+            transition: color 200ms,
+                        background-color 200ms;
+
+            &:hover,
+            &:focus {
+                color: $white;
+                background-color: $pale-red;
+            }
+        }
+    }
+
+}
+
+/* Smartphones and small tablets (portrait and landscape) ----------- */
+@media only screen and (max-width: 680px) {
+ .content {
+ 	ul {
+ 		padding-left: 0;
+ 	}
+
+	.has-padding-right {
+	 	padding-right: 1rem;
+	 }
+
+	 .has-padding-left {
+	 	display: block;
+	 	padding-left:0;
+	 }
+
+	.content-tools {
+		font-size: 0.9rem;
+	}
+}
 }

@@ -39,14 +39,21 @@ var
 
 console.log((devBuild ? 'Development' : 'Production'), 'build, version', pkg.version);
 
+// Global configuration data
+var globalData = require('./src/global.json'),
+metadataOpts = {
+    site: {
+        url: globalData.url,
+        title: globalData.title,
+    }
+    // Load external libraries into the nunjucks environment (moment, _)
+    // moment,
+    // _,
+};
+
 var ms = metalsmith(dir.base)
 	// .clean(!devBuild) // clean folder before a production build
-	.metadata({
-		site: {
-			name: 'Kyle Thinks',
-			description: "Kyle Stone: Agile leader, digital project manager, strategic thinker"
-		}
-	})
+	.metadata(metadataOpts)
 	.destination(dir.dest)
 	.use(markdown())
 	.use(collections({
