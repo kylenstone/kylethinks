@@ -24,6 +24,7 @@
     "metalsmith-browser-sync": "^1.1.1",
     "metalsmith-coffee": "0.0.2",
     "metalsmith-debug": "^1.1.0",
+    "metalsmith-drafts": "0.0.1",
     "metalsmith-html-minifier": "^2.2.0",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-register-helpers": "^0.3.0",

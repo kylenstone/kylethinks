@@ -26,6 +26,7 @@ var
 	debug = require('metalsmith-debug'),
 	markdown = require('metalsmith-markdown'),
 	wordcount = require('metalsmith-word-count'),
+	drafts = require('metalsmith-drafts'),
 	collections = require('metalsmith-collections'),
 	permalinks = require('metalsmith-permalinks'),
 	layouts = require('metalsmith-layouts'),
@@ -56,6 +57,7 @@ var ms = metalsmith(dir.base)
 	.metadata(metadataOpts)
 	.destination(dir.dest)
 	.use(markdown())
+	.use(drafts())
 	.use(collections({
 		article: {
 			sortBy: 'date',
