@@ -1,6 +1,7 @@
 ---
 date: ""
 title: "How to Sequence a Sprint Planning Meeting"
+draft: true
 collection: article
 ---
 Correct order for sprint planning exercise

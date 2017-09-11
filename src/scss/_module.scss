@@ -30,8 +30,9 @@ article {
 		vertical-align: middle;
 	}
 
-	.plain-inline-list {
+	.plain-inline-list ul {
 		display: inline;
+		padding: 0;
 	}
 
 	.plain-inline-list > li {
