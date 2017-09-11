@@ -30,10 +30,6 @@ header {
 	nav {
 		float:right;
 
-		ul > li {
-			// responsive only
-		}
-
 		ul > li > a {
 			// responsive only
 			color: $half-black;
@@ -68,16 +64,48 @@ header {
 	}
 }
 
+//footer
+footer {
+	background-color: $medium-grey;
+	font-family: $butler;
+	color: $black;
+	padding: 2rem 4rem;
+
+
+	.copyright {
+		float:left;
+		width: 50%;
+	}
+
+	.credits {
+		float: right;
+		width: 40%;
+	}
+
+	.footer-container {
+			width: 100%;
+	}
+
+}
+
 .about {
 	// border: 5px solid red; // DEBUG
+	font-family:$open-sans;
+	margin: 1rem;
+	padding-left: 1.5rem;
 
 	.portfolio-pic {
 		width: 300px;
+		padding-bottom: 1rem;
 	}
 
 	.sub {
 		padding-right: 2rem;
 	}
+
+	.subtitle { 
+		color: $medium-grey;
+		}
 
 }
 
@@ -152,33 +180,16 @@ header {
 	padding: 0.5em; // adjust	
 }
 
-.contact{
+.contact {
 	text-align: center;	
 	padding: 1rem;
-}
-
-footer {
-	// border: 5px solid red; // DEBUG
-	background-color: $medium-grey;
-	color: $black;
-	font-size: 1.125rem;
-	padding: 2rem 4rem;
-
-	.credits {
-		float:right;
-	}
-
 }
 
 /* BLOG LAYOUT ----------- */
 
 article {
 	/* Article is understood as a fully-composed document inclusive of header, timestamp, etc.  See Mozilla: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article */
-	padding: 0 14rem 0 4rem;
-
-	ul {
-		padding: 0 0 1rem 2rem;		
-	}
+	padding: 0 2rem;
 }
 
 
@@ -187,54 +198,15 @@ article {
  * MEDIA QUERIES 
  */
 
-/* Smartphones and small tablets (portrait and landscape) ----------- */
-@media only screen and (max-width: 680px) {
- 
-    .about {
-    	text-align: center;
 
-		.subtitle { 
-		font-size: 1rem;
-		padding-bottom: 2em;
-		}
-
-		.portfolio-pic {
-			text-align: center;
-			padding-top: 0.75rem;
-		}
-	}
-
-	.pro-summary{
-		width: 90%;
-	}
-
-	.section .service-item {
-		width: 100%;
-
-		p {
-			padding: 3em 6em;
-			text-align: left;
-		}
-	}
-
-}
-
+// REFACTOR
 @media all and (min-width: 680px) 
 {
 /* Small tablets and larger (portrait and landscape) ----------- */
 
-
-	// TODO refactor and remove, these styles are too binding
-	h1 {
-		font-weight: bold;
-		font-size: 4em;
-		color: $black;
-	}
-
     header {
 		// border: 5px solid red; // DEBUG
         text-align: left;
-        width: 100%;
 
         div#logo > div#navToggle {
         display: none;    
@@ -260,9 +232,6 @@ article {
 	}
 
     .about {
-    	clear: both;
-		padding: 0.75rem 0.75rem 6.25rem 3rem;
-		font-family:$open-sans;
 
 		.about-title {
 			padding-top: 5rem;
@@ -271,6 +240,10 @@ article {
     	.portfolio-pic {
     		float:right;
 	    }
+	}
+
+	article {
+		padding: 0 14rem 0 4rem;
 	}
 
 	.articles, .posts {
@@ -292,10 +265,41 @@ article {
 	}
 }
 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1225px) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width: 1025px)
+and (max-width : 1224px) {
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	article {
+		padding: 0 10rem;
+	}
+
+}
+
 /* Tablets (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 681px) 
 and (max-width : 1024px) {
+
+	// TODO refactor and remove, these styles are too binding
+	h1 {
+		font-size: 2rem;
+	}
+
+	article {
+	padding: 0 6rem;
+
+}
 
 	.sub {
 		display: block;
@@ -303,13 +307,49 @@ and (max-width : 1024px) {
 	}
 
 	.about {
-		padding-bottom: 3rem;
+		// padding-bottom: 3rem;
 	}
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
 
 }
 
+
+/* Smartphones and small tablets (portrait and landscape) ----------- */
+@media only screen and (max-width: 680px) {
+ 
+	// base elements
+	h1 {
+		font-size: 2rem;
+	}
+
+	footer {
+		display: block;
+	}
+
+	//layouts
+
+    .about {
+    	text-align: center;
+
+		.portfolio-pic {
+			text-align: center;
+		}
+
+		.subtitle {
+			font-size: 1rem;
+		}
+	}
+
+	.pro-summary{
+		width: 90%;
+	}
+
+	.section .service-item {
+		width: 100%;
+
+		p {
+			padding: 3em 6em;
+			text-align: left;
+		}
+	}
+
+}

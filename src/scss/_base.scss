@@ -1,11 +1,17 @@
 // Google fonts
 @import url(https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans);
-@import url('https://fontlibrary.org/face/butler');
+// @import url('https://fontlibrary.org/face/butler');
 
 // Font variables
+@font-face {
+	font-family: Butler;
+	src: url('/assets/otf/Butler_Regular.otf'), format("Butler");
+}
+
 $rokkitt: 'Rokkitt', serif;
 $open-sans: 'Open Sans', sans-serif;
 $butler: 'Butler', sans-serif;
+
 
 // Color variables
 
@@ -54,7 +60,7 @@ h1, h2, h3, h4, h5, h6, title {
 
 h1 {
 	color: $black;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 h2 {
@@ -62,7 +68,6 @@ h2 {
 }
 
 h3 {
-	font-size: 2rem;
 	color: $half-black;
 }
 
