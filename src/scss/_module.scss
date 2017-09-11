@@ -8,12 +8,11 @@
 	font-family: $rokkitt;
 	font-size: 1.25rem;
 	color: $pale-red;
-	margin: 1.5rem 0 0 2rem;
+	margin-top: 1.5rem;
 	text-transform: uppercase;
 }
 
 article {
-	padding: 0 12rem 0 4rem;
 
 	h2 {
 		padding: 2rem 0 1rem 0;
@@ -25,7 +24,7 @@ article {
 	.content-tools {
 		font-family: $rokkitt;
 		color: $dark-grey;
-		padding: 1rem 0;
+		margin: 1rem 0 0 0;
 		font-size: 1.2rem;
 		letter-spacing: 0.0625rem;
 		vertical-align: middle;
