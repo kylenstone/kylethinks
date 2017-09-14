@@ -16,7 +16,8 @@
   "main": "build.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "node ."
+    "start": "node .",
+    "production": "NODE_ENV=production node ./build.js"
   },
   "devDependencies": {
     "handlebars": "^4.0.10",

@@ -52,7 +52,7 @@ header {
 
 	.nav-list {
 	list-style-type: none;
-	padding: 0;
+
 
 		a {
 			color: $half-white;
@@ -67,7 +67,8 @@ header {
 //footer
 footer {
 	background-color: $medium-grey;
-	font-family: $butler;
+	font-family: $rokkitt;
+	font-size: 1.25rem;
 	color: $black;
 	padding: 2rem 4rem;
 
@@ -79,7 +80,7 @@ footer {
 
 	.credits {
 		float: right;
-		width: 40%;
+		width: 50%;
 	}
 
 	.footer-container {
@@ -169,17 +170,6 @@ footer {
 	text-align: center;
 }
 
-.nav {
-	// margin: 0 0 0 -1em;
-	display: flex;
-	position: relative;
-	justify-content: flex-start;
-	align-content: center;
-	max-height: 6.42;
-	background-color: $black;
-	padding: 0.5em; // adjust	
-}
-
 .contact {
 	text-align: center;	
 	padding: 1rem;
@@ -190,6 +180,17 @@ footer {
 article {
 	/* Article is understood as a fully-composed document inclusive of header, timestamp, etc.  See Mozilla: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article */
 	padding: 0 2rem;
+
+
+	a, a:visited {
+		color: $pale-red;
+		text-decoration: none;
+	}
+
+	a:hover {
+		border-bottom: 0.0625rem solid $pale-red; // borrowed from guardian
+	}
+
 }
 
 
@@ -323,9 +324,36 @@ and (max-width : 1024px) {
 
 	footer {
 		display: block;
+		font-size: 1rem;
+		text-align: center;
+
+		.copyleft {
+			display: block;
+			padding-bottom: 2rem;
+		}
+
+		.credits {
+			float: left;
+			display: block;
+			width: 100%;
+		}
 	}
 
 	//layouts
+
+	.nav {
+	// margin: 0 0 0 -1em;
+	display: flex;
+	position: relative;
+	justify-content: flex-start;
+	align-content: center;
+	max-height: 6.42;
+	background-color: $black;
+
+	ul {
+		padding: 0.5rem;
+	}
+}
 
     .about {
     	text-align: center;

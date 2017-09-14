@@ -53,7 +53,7 @@ metadataOpts = {
 };
 
 var ms = metalsmith(dir.base)
-	// .clean(!devBuild) // clean folder before a production build
+	.clean(!devBuild) // clean folder before a production build
 	.metadata(metadataOpts)
 	.destination(dir.dest)
 	.use(markdown())
